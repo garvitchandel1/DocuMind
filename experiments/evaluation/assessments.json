@@ -1,0 +1,1212 @@
+{
+  "q1": {
+    "recursive:78": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "recursive:79": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "recursive:67": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:243": {
+      "relevance": 2,
+      "relevant_information": 7
+    },
+    "recursive:44": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:88": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:533": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:70": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:69": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:77": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "recursive:81": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:3": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:361": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:11": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:86": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:80": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:195": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:87": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:75": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:83": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:81": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "paragraph:80": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:89": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:553": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:70": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:560": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:83": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:4": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:3": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:72": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:555": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:124": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:79": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:82": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:593": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:90": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:78": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:254": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:87": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:462": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:69": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "fixed:68": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:67": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:458": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:76": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:208": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:40": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:62": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:452": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:77": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:70": {
+      "relevance": 3,
+      "relevant_information": 7
+    },
+    "fixed:453": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:61": {
+      "relevance": 2,
+      "relevant_information": 3
+    },
+    "fixed:489": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:63": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:78": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:71": {
+      "relevance": 3,
+      "relevant_information": 7
+    },
+    "fixed:84": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:75": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:398": {
+      "relevance": 0,
+      "relevant_information": 0
+    }
+  },
+  "q2": {
+    "recursive:313": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "recursive:317": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:788": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:315": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:319": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "recursive:796": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:641": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:12": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:771": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:640": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:320": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "recursive:738": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:834": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:312": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "recursive:329": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:314": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:790": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:802": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:795": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:324": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:831": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:324": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "paragraph:673": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:327": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:341": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:776": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:838": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:331": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:330": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:830": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:672": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:833": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:840": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:389": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:326": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:12": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:671": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:325": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:338": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:334": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "fixed:673": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:265": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "fixed:267": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:268": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:547": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:679": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:269": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:629": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:546": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:274": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:271": {
+      "relevance": 3,
+      "relevant_information": 7
+    },
+    "fixed:681": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:270": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:266": {
+      "relevance": 3,
+      "relevant_information": 7
+    },
+    "fixed:685": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:772": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:10": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:307": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:687": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:630": {
+      "relevance": 1,
+      "relevant_information": 2
+    }
+  },
+  "q3": {
+    "recursive:485": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "recursive:57": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:486": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:757": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:482": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:542": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:567": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:481": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:540": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:293": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:613": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:566": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:479": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:493": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:590": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:1033": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:497": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:1071": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:22": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:605": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:500": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "paragraph:590": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:58": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:797": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:562": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:643": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:497": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:499": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:592": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:303": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:496": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:19": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:615": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:494": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:495": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:513": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:614": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:304": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:564": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:563": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:410": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:406": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:914": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:409": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:51": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:407": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:480": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:880": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:460": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:522": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:19": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:459": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:420": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:883": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:419": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:244": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:249": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:646": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:408": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:435": {
+      "relevance": 0,
+      "relevant_information": 0
+    }
+  },
+  "q4": {
+    "recursive:5": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:122": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "recursive:709": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:717": {
+      "relevance": 2,
+      "relevant_information": 7
+    },
+    "recursive:117": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:130": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:209": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:768": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:679": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:300": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:420": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:716": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:394": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:819": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:480": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:718": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:405": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:194": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:722": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:714": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:763": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:754": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:242": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "paragraph:127": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:203": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:450": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:122": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:699": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:919": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "paragraph:241": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "paragraph:451": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:103": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:746": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:5": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:236": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:755": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:920": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:252": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:217": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:26": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:612": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:4": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:102": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:169": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:107": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:619": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:744": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:714": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:611": {
+      "relevance": 3,
+      "relevant_information": 7
+    },
+    "fixed:440": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:690": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:167": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:106": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:656": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:207": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:759": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:114": {
+      "relevance": 2,
+      "relevant_information": 3
+    },
+    "fixed:292": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:199": {
+      "relevance": 2,
+      "relevant_information": 3
+    },
+    "fixed:19": {
+      "relevance": 0,
+      "relevant_information": 0
+    }
+  },
+  "q5": {
+    "recursive:112": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:117": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:114": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "recursive:819": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:342": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:119": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:341": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "recursive:336": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "recursive:825": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:4": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "recursive:339": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:437": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "recursive:118": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "recursive:498": {
+      "relevance": 1,
+      "relevant_information": 3
+    },
+    "recursive:223": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:1052": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "recursive:834": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "recursive:436": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "recursive:113": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "recursive:111": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:123": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:119": {
+      "relevance": 3,
+      "relevant_information": 9
+    },
+    "paragraph:225": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:5": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "paragraph:349": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "paragraph:353": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "paragraph:355": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "paragraph:354": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:117": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:1112": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:864": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:120": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "paragraph:122": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:1123": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:118": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "paragraph:787": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:870": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "paragraph:451": {
+      "relevance": 2,
+      "relevant_information": 6
+    },
+    "paragraph:116": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "paragraph:351": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:100": {
+      "relevance": 3,
+      "relevant_information": 10
+    },
+    "fixed:98": {
+      "relevance": 0,
+      "relevant_information": 0
+    },
+    "fixed:289": {
+      "relevance": 3,
+      "relevant_information": 7
+    },
+    "fixed:102": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:285": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:103": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:99": {
+      "relevance": 3,
+      "relevant_information": 8
+    },
+    "fixed:290": {
+      "relevance": 2,
+      "relevant_information": 5
+    },
+    "fixed:368": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:191": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:190": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:897": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:300": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:705": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:106": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:906": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:372": {
+      "relevance": 2,
+      "relevant_information": 4
+    },
+    "fixed:3": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:893": {
+      "relevance": 1,
+      "relevant_information": 2
+    },
+    "fixed:255": {
+      "relevance": 2,
+      "relevant_information": 4
+    }
+  }
+}

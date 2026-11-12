@@ -1,0 +1,1593 @@
+{
+  "q1": {
+    "query": "What is supervised learning?",
+    "results": [
+      {
+        "candidate_id": "fixed:69",
+        "strategy": "fixed",
+        "rank": 1,
+        "score": 0.6608162522315979,
+        "chunk_id": 69,
+        "text": "you feed to the algorithm includes the desired\nsolutions, called labels (Figure 1-5).\nFigure 1-5. A labeled training set for supervised learning (e.g., spam classification)\n8\n|\nChapter 1: The Machine Learning Landscape\n\n1 Fun fact: this odd-sounding name is a statistics term introduced by Francis Galton while he was studying the\nfact that the children of tall people tend to be shorter than their parents. Since children were shorter, he called\nthis regression to the mean. This name was then applied to the methods he used to analyze correlations\nbetween variables.\nA typical supervised learning task is classification. The spam filter is a good example\nof this: it is trained with many example emails along with their class (spam or ham),\nand it must learn how to classify new emails.\nAnother typical task is to predict a target numeric value, such as the price of a car,\ngiven a set of features (mileage, age, brand, etc.) called predictors. This sort of task is\ncalled regression (Figure 1-6).1 To train the system, you need to give it many examples\nof cars, including both their predictors and their labels (i.e., their prices).\nIn Machine Learning an attribute is a data type (e.g., “Mileage”),\nwhile",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            34,
+            35
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:68",
+        "strategy": "fixed",
+        "rank": 2,
+        "score": 0.5486578941345215,
+        "chunk_id": 68,
+        "text": "Learning)\n• Whether or not they can learn incrementally on the fly (online versus batch\nlearning)\n• Whether they work by simply comparing new data points to known data points,\nor instead detect patterns in the training data and build a predictive model, much\nlike scientists do (instance-based versus model-based learning)\nThese criteria are not exclusive; you can combine them in any way you like. For\nexample, a state-of-the-art spam filter may learn on the fly using a deep neural net‐\nwork model trained using examples of spam and ham; this makes it an online, model-\nbased, supervised learning system.\nLet’s look at each of these criteria a bit more closely.\nSupervised/Unsupervised Learning\nMachine Learning systems can be classified according to the amount and type of\nsupervision they get during training. There are four major categories: supervised\nlearning, unsupervised learning, semisupervised learning, and Reinforcement Learn‐\ning.\nSupervised learning\nIn supervised learning, the training data you feed to the algorithm includes the desired\nsolutions, called labels (Figure 1-5).\nFigure 1-5. A labeled training set for supervised learning (e.g., spam classification)\n8\n|\nChapter 1: The Machine",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            34
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:67",
+        "strategy": "fixed",
+        "rank": 3,
+        "score": 0.5177061557769775,
+        "chunk_id": 67,
+        "text": "ML techniques to dig into large amounts of data can help discover patterns\nthat were not immediately apparent. This is called data mining.\nFigure 1-4. Machine Learning can help humans learn\nTo summarize, Machine Learning is great for:\n• Problems for which existing solutions require a lot of hand-tuning or long lists of\nrules: one Machine Learning algorithm can often simplify code and perform bet‐\nter.\n• Complex problems for which there is no good solution at all using a traditional\napproach: the best Machine Learning techniques can find a solution.\n• Fluctuating environments: a Machine Learning system can adapt to new data.\n• Getting insights about complex problems and large amounts of data.\nWhy Use Machine Learning?\n|\n7\n\nTypes of Machine Learning Systems\nThere are so many different types of Machine Learning systems that it is useful to\nclassify them in broad categories based on:\n• Whether or not they are trained with human supervision (supervised, unsuper‐\nvised, semisupervised, and Reinforcement Learning)\n• Whether or not they can learn incrementally on the fly (online versus batch\nlearning)\n• Whether they work by simply comparing new data points to known data points,\nor instead detect",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            33,
+            34
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:458",
+        "strategy": "fixed",
+        "rank": 4,
+        "score": 0.4942581355571747,
+        "chunk_id": 458,
+        "text": "in detecting defects in manufacturing, or\nfor fraud detection.\n• For semi-supervised learning: if you only have a few labels, you could perform\nclustering and propagate the labels to all the instances in the same cluster. This\ncan greatly increase the amount of labels available for a subsequent supervised\nlearning algorithm, and thus improve its performance.\nClustering\n|\n239\n\n1 “Least square quantization in PCM,” Stuart P. Lloyd. (1982).\n• For search engines: for example, some search engines let you search for images\nthat are similar to a reference image. To build such a system, you would first\napply a clustering algorithm to all the images in your database: similar images\nwould end up in the same cluster. Then when a user provides a reference image,\nall you need to do is to find this image’s cluster using the trained clustering\nmodel, and you can then simply return all the images from this cluster.\n• To segment an image: by clustering pixels according to their color, then replacing\neach pixel’s color with the mean color of its cluster, it is possible to reduce the\nnumber of different colors in the image considerably. This technique is used in\nmany object detection and tracking systems,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            265,
+            266
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:76",
+        "strategy": "fixed",
+        "rank": 5,
+        "score": 0.48922741413116455,
+        "chunk_id": 76,
+        "text": "Photos, are good examples of this. Once\nyou upload all your family photos to the service, it automatically recognizes that the\nsame person A shows up in photos 1, 5, and 11, while another person B shows up in\nphotos 2, 5, and 7. This is the unsupervised part of the algorithm (clustering). Now all\nthe system needs is for you to tell it who these people are. Just one label per person,4\nand it is able to name everyone in every photo, which is useful for searching photos.\nTypes of Machine Learning Systems\n|\n13\n\nFigure 1-11. Semisupervised learning\nMost semisupervised learning algorithms are combinations of unsupervised and\nsupervised algorithms. For example, deep belief networks (DBNs) are based on unsu‐\npervised components called restricted Boltzmann machines (RBMs) stacked on top of\none another. RBMs are trained sequentially in an unsupervised manner, and then the\nwhole system is fine-tuned using supervised learning techniques.\nReinforcement Learning\nReinforcement Learning is a very different beast. The learning system, called an agent\nin this context, can observe the environment, select and perform actions, and get\nrewards in return (or penalties in the form of negative rewards, as in",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            39,
+            40
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:208",
+        "strategy": "fixed",
+        "rank": 6,
+        "score": 0.4885217249393463,
+        "chunk_id": 208,
+        "text": "in the online Jupyter notebooks at https://\ngithub.com/ageron/handson-ml2.\nTry It Out!\n|\n85\n\n1 By default Scikit-Learn caches downloaded datasets in a directory called $HOME/scikit_learn_data.\nCHAPTER 3\nClassification\nWith Early Release ebooks, you get books in their earliest form—\nthe author’s raw and unedited content as he or she writes—so you\ncan take advantage of these technologies long before the official\nrelease of these titles. The following will be Chapter 3 in the final\nrelease of the book.\nIn Chapter 1 we mentioned that the most common supervised learning tasks are\nregression (predicting values) and classification (predicting classes). In Chapter 2 we\nexplored a regression task, predicting housing values, using various algorithms such\nas Linear Regression, Decision Trees, and Random Forests (which will be explained\nin further detail in later chapters). Now we will turn our attention to classification\nsystems.\nMNIST\nIn this chapter, we will be using the MNIST dataset, which is a set of 70,000 small\nimages of digits handwritten by high school students and employees of the US Cen‐\nsus Bureau. Each image is labeled with the digit it represents. This set has been stud‐\nied so much",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            111,
+            113
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:40",
+        "strategy": "fixed",
+        "rank": 7,
+        "score": 0.48141852021217346,
+        "chunk_id": 40,
+        "text": "is Machine Learning? What problems does it try to solve? What are the\nmain categories and fundamental concepts of Machine Learning systems?\n• The main steps in a typical Machine Learning project.\n• Learning by fitting a model to data.\n• Optimizing a cost function.\n• Handling, cleaning, and preparing data.\n• Selecting and engineering features.\n• Selecting a model and tuning hyperparameters using cross-validation.\n• The main challenges of Machine Learning, in particular underfitting and overfit‐\nting (the bias/variance tradeoff).\n• Reducing the dimensionality of the training data to fight the curse of dimension‐\nality.\n• Other unsupervised learning techniques, including clustering, density estimation\nand anomaly detection.\nPreface\n|\nxiii\n\n• The most common learning algorithms: Linear and Polynomial Regression,\nLogistic Regression, k-Nearest Neighbors, Support Vector Machines, Decision\nTrees, Random Forests, and Ensemble methods.\nxiv\n|\nPreface\n\nPart II, Neural Networks and Deep Learning, covers the following topics:\n• What are neural nets? What are they good for?\n• Building and training neural nets using TensorFlow and Keras.\n• The most important neural net architectures: feedforward neural",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            15,
+            16,
+            17
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:62",
+        "strategy": "fixed",
+        "rank": 8,
+        "score": 0.47912347316741943,
+        "chunk_id": 62,
+        "text": "every data\nscientist should know by heart. It will be a high-level overview (the only chapter\nwithout much code), all rather simple, but you should make sure everything is\ncrystal-clear to you before continuing to the rest of the book. So grab a coffee and let’s\nget started!\nIf you already know all the Machine Learning basics, you may want\nto skip directly to Chapter 2. If you are not sure, try to answer all\nthe questions listed at the end of the chapter before moving on.\nWhat Is Machine Learning?\nMachine Learning is the science (and art) of programming computers so they can\nlearn from data.\nHere is a slightly more general definition:\n[Machine Learning is the] field of study that gives computers the ability to learn\nwithout being explicitly programmed.\n—Arthur Samuel, 1959\nAnd a more engineering-oriented one:\nA computer program is said to learn from experience E with respect to some task T\nand some performance measure P, if its performance on T, as measured by P, improves\nwith experience E.\n—Tom Mitchell, 1997\nFor example, your spam filter is a Machine Learning program that can learn to flag\nspam given examples of spam emails (e.g., flagged by users) and examples of regular\n(nonspam,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            30
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:452",
+        "strategy": "fixed",
+        "rank": 9,
+        "score": 0.4725097715854645,
+        "chunk_id": 452,
+        "text": "LeCun famously said that “if intelligence was a cake,\nunsupervised learning would be the cake, supervised learning would be the icing on\nthe cake, and reinforcement learning would be the cherry on the cake”. In other\nwords, there is a huge potential in unsupervised learning that we have only barely\nstarted to sink our teeth into.\nFor example, say you want to create a system that will take a few pictures of each item\non a manufacturing production line and detect which items are defective. You can\nfairly easily create a system that will take pictures automatically, and this might give\nyou thousands of pictures every day. You can then build a reasonably large dataset in\njust a few weeks. But wait, there are no labels! If you want to train a regular binary\nclassifier that will predict whether an item is defective or not, you will need to label\nevery single picture as “defective” or “normal”. This will generally require human\nexperts to sit down and manually go through all the pictures. This is a long, costly\nand tedious task, so it will usually only be done on a small subset of the available pic‐\ntures. As a result, the labeled dataset will be quite small, and the classifier’s perfor‐\nmance",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            263
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:77",
+        "strategy": "fixed",
+        "rank": 10,
+        "score": 0.46581587195396423,
+        "chunk_id": 77,
+        "text": "beast. The learning system, called an agent\nin this context, can observe the environment, select and perform actions, and get\nrewards in return (or penalties in the form of negative rewards, as in Figure 1-12). It\nmust then learn by itself what is the best strategy, called a policy, to get the most\nreward over time. A policy defines what action the agent should choose when it is in a\ngiven situation.\n14\n|\nChapter 1: The Machine Learning Landscape\n\nFigure 1-12. Reinforcement Learning\nFor example, many robots implement Reinforcement Learning algorithms to learn\nhow to walk. DeepMind’s AlphaGo program is also a good example of Reinforcement\nLearning: it made the headlines in May 2017 when it beat the world champion Ke Jie\nat the game of Go. It learned its winning policy by analyzing millions of games, and\nthen playing many games against itself. Note that learning was turned off during the\ngames against the champion; AlphaGo was just applying the policy it had learned.\nBatch and Online Learning\nAnother criterion used to classify Machine Learning systems is whether or not the\nsystem can learn incrementally from a stream of incoming data.\nBatch learning\nIn batch learning, the system is incapable",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            40,
+            41
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:70",
+        "strategy": "fixed",
+        "rank": 11,
+        "score": 0.4588322639465332,
+        "chunk_id": 70,
+        "text": "the system, you need to give it many examples\nof cars, including both their predictors and their labels (i.e., their prices).\nIn Machine Learning an attribute is a data type (e.g., “Mileage”),\nwhile a feature has several meanings depending on the context, but\ngenerally means an attribute plus its value (e.g., “Mileage =\n15,000”). Many people use the words attribute and feature inter‐\nchangeably, though.\nFigure 1-6. Regression\nNote that some regression algorithms can be used for classification as well, and vice\nversa. For example, Logistic Regression is commonly used for classification, as it can\noutput a value that corresponds to the probability of belonging to a given class (e.g.,\n20% chance of being spam).\nTypes of Machine Learning Systems\n|\n9\n\n2 Some neural network architectures can be unsupervised, such as autoencoders and restricted Boltzmann\nmachines. They can also be semisupervised, such as in deep belief networks and unsupervised pretraining.\nHere are some of the most important supervised learning algorithms (covered in this\nbook):\n• k-Nearest Neighbors\n• Linear Regression\n• Logistic Regression\n• Support Vector Machines (SVMs)\n• Decision Trees and Random Forests\n• Neural networks2\nUnsupervised",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            35,
+            36
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:453",
+        "strategy": "fixed",
+        "rank": 12,
+        "score": 0.45845329761505127,
+        "chunk_id": 453,
+        "text": "a long, costly\nand tedious task, so it will usually only be done on a small subset of the available pic‐\ntures. As a result, the labeled dataset will be quite small, and the classifier’s perfor‐\nmance will be disappointing. Moreover, every time the company makes any change to\nits products, the whole process will need to be started over from scratch. Wouldn’t it\n237\n\nbe great if the algorithm could just exploit the unlabeled data without needing\nhumans to label every picture? Enter unsupervised learning.\nIn Chapter 8, we looked at the most common unsupervised learning task: dimension‐\nality reduction. In this chapter, we will look at a few more unsupervised learning tasks\nand algorithms:\n• Clustering: the goal is to group similar instances together into clusters. This is a\ngreat tool for data analysis, customer segmentation, recommender systems,\nsearch engines, image segmentation, semi-supervised learning, dimensionality\nreduction, and more.\n• Anomaly detection: the objective is to learn what “normal” data looks like, and\nuse this to detect abnormal instances, such as defective items on a production\nline or a new trend in a time series.\n• Density estimation: this is the task of estimating",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            263,
+            264
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:61",
+        "strategy": "fixed",
+        "rank": 13,
+        "score": 0.4467500150203705,
+        "chunk_id": 61,
+        "text": "by hundreds of ML applications that now quietly power hun‐\ndreds of products and features that you use regularly, from better recommendations\nto voice search.\nWhere does Machine Learning start and where does it end? What exactly does it\nmean for a machine to learn something? If I download a copy of Wikipedia, has my\ncomputer really “learned” something? Is it suddenly smarter? In this chapter we will\nstart by clarifying what Machine Learning is and why you may want to use it.\nThen, before we set out to explore the Machine Learning continent, we will take a\nlook at the map and learn about the main regions and the most notable landmarks:\nsupervised versus unsupervised learning, online versus batch learning, instance-\nbased versus model-based learning. Then we will look at the workflow of a typical ML\nproject, discuss the main challenges you may face, and cover how to evaluate and\nfine-tune a Machine Learning system.\n3\n\nThis chapter introduces a lot of fundamental concepts (and jargon) that every data\nscientist should know by heart. It will be a high-level overview (the only chapter\nwithout much code), all rather simple, but you should make sure everything is\ncrystal-clear to you before",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            29,
+            30
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:489",
+        "strategy": "fixed",
+        "rank": 14,
+        "score": 0.4398694634437561,
+        "chunk_id": 489,
+        "text": "• The model is trained on the labeled instances gathered so far, and this model is\nused to make predictions on all the unlabeled instances.\n• The instances for which the model is most uncertain (i.e., when its estimated\nprobability is lowest) must be labeled by the expert.\n• Then you just iterate this process again and again, until the performance\nimprovement stops being worth the labeling effort.\nOther strategies include labeling the instances that would result in the largest model\nchange, or the largest drop in the model’s validation error, or the instances that differ‐\nent models disagree on (e.g., an SVM, a Random Forest, and so on).\nBefore we move on to Gaussian mixture models, let’s take a look at DBSCAN,\nanother popular clustering algorithm that illustrates a very different approach based\non local density estimation. This approach allows the algorithm to identify clusters of\narbitrary shapes.\nDBSCAN\nThis algorithm defines clusters as continuous regions of high density. It is actually\nquite simple:\n• For each instance, the algorithm counts how many instances are located within a\nsmall distance ε (epsilon) from it. This region is called the instance’s ε-\nneighborhood.\n• If an instance",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            282
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:63",
+        "strategy": "fixed",
+        "rank": 15,
+        "score": 0.43160372972488403,
+        "chunk_id": 63,
+        "text": "E.\n—Tom Mitchell, 1997\nFor example, your spam filter is a Machine Learning program that can learn to flag\nspam given examples of spam emails (e.g., flagged by users) and examples of regular\n(nonspam, also called “ham”) emails. The examples that the system uses to learn are\ncalled the training set. Each training example is called a training instance (or sample).\nIn this case, the task T is to flag spam for new emails, the experience E is the training\ndata, and the performance measure P needs to be defined; for example, you can use\nthe ratio of correctly classified emails. This particular performance measure is called\naccuracy and it is often used in classification tasks.\nIf you just download a copy of Wikipedia, your computer has a lot more data, but it is\nnot suddenly better at any task. Thus, it is not Machine Learning.\nWhy Use Machine Learning?\nConsider how you would write a spam filter using traditional programming techni‐\nques (Figure 1-1):\n4\n|\nChapter 1: The Machine Learning Landscape\n\n1. First you would look at what spam typically looks like. You might notice that\nsome words or phrases (such as “4U,” “credit card,” “free,” and “amazing”) tend to\ncome up a lot in the subject. Perhaps",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            30,
+            31
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:78",
+        "strategy": "fixed",
+        "rank": 16,
+        "score": 0.42834216356277466,
+        "chunk_id": 78,
+        "text": "criterion used to classify Machine Learning systems is whether or not the\nsystem can learn incrementally from a stream of incoming data.\nBatch learning\nIn batch learning, the system is incapable of learning incrementally: it must be trained\nusing all the available data. This will generally take a lot of time and computing\nresources, so it is typically done offline. First the system is trained, and then it is\nlaunched into production and runs without learning anymore; it just applies what it\nhas learned. This is called offline learning.\nIf you want a batch learning system to know about new data (such as a new type of\nspam), you need to train a new version of the system from scratch on the full dataset\n(not just the new data, but also the old data), then stop the old system and replace it\nwith the new one.\nFortunately, the whole process of training, evaluating, and launching a Machine\nLearning system can be automated fairly easily (as shown in Figure 1-3), so even a\nTypes of Machine Learning Systems\n|\n15\n\nbatch learning system can adapt to change. Simply update the data and train a new\nversion of the system from scratch as often as needed.\nThis solution is simple and often works fine,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            41,
+            42
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:71",
+        "strategy": "fixed",
+        "rank": 17,
+        "score": 0.42777249217033386,
+        "chunk_id": 71,
+        "text": "algorithms (covered in this\nbook):\n• k-Nearest Neighbors\n• Linear Regression\n• Logistic Regression\n• Support Vector Machines (SVMs)\n• Decision Trees and Random Forests\n• Neural networks2\nUnsupervised learning\nIn unsupervised learning, as you might guess, the training data is unlabeled\n(Figure 1-7). The system tries to learn without a teacher.\nFigure 1-7. An unlabeled training set for unsupervised learning\nHere are some of the most important unsupervised learning algorithms (most of\nthese are covered in Chapter 8 and Chapter 9):\n• Clustering\n— K-Means\n— DBSCAN\n— Hierarchical Cluster Analysis (HCA)\n• Anomaly detection and novelty detection\n— One-class SVM\n— Isolation Forest\n10\n|\nChapter 1: The Machine Learning Landscape\n\n• Visualization and dimensionality reduction\n— Principal Component Analysis (PCA)\n— Kernel PCA\n— Locally-Linear Embedding (LLE)\n— t-distributed Stochastic Neighbor Embedding (t-SNE)\n• Association rule learning\n— Apriori\n— Eclat\nFor example, say you have a lot of data about your blog’s visitors. You may want to\nrun a clustering algorithm to try to detect groups of similar visitors (Figure 1-8). At\nno point do you tell the algorithm which group a visitor belongs to: it",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            36,
+            37
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:84",
+        "strategy": "fixed",
+        "rank": 18,
+        "score": 0.4255722165107727,
+        "chunk_id": 84,
+        "text": "The system would flag an email as spam if it has many words in com‐\nmon with a known spam email.\nThis is called instance-based learning: the system learns the examples by heart, then\ngeneralizes to new cases by comparing them to the learned examples (or a subset of\nthem), using a similarity measure. For example, in Figure 1-15 the new instance\nwould be classified as a triangle because the majority of the most similar instances\nbelong to that class.\n18\n|\nChapter 1: The Machine Learning Landscape\n\nFigure 1-15. Instance-based learning\nModel-based learning\nAnother way to generalize from a set of examples is to build a model of these exam‐\nples, then use that model to make predictions. This is called model-based learning\n(Figure 1-16).\nFigure 1-16. Model-based learning\nFor example, suppose you want to know if money makes people happy, so you down‐\nload the Better Life Index data from the OECD’s website as well as stats about GDP\nper capita from the IMF’s website. Then you join the tables and sort by GDP per cap‐\nita. Table 1-1 shows an excerpt of what you get.\nTypes of Machine Learning Systems\n|\n19\n\n5 By convention, the Greek letter θ (theta) is frequently used to represent model parameters.\nTable",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            44,
+            45,
+            46
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:75",
+        "strategy": "fixed",
+        "rank": 19,
+        "score": 0.4190170168876648,
+        "chunk_id": 75,
+        "text": "1-10). A very similar\ntask is novelty detection: the difference is that novelty detection algorithms expect to\nsee only normal data during training, while anomaly detection algorithms are usually\nmore tolerant, they can often perform well even with a small percentage of outliers in\nthe training set.\nFigure 1-10. Anomaly detection\nFinally, another common unsupervised task is association rule learning, in which the\ngoal is to dig into large amounts of data and discover interesting relations between\nattributes. For example, suppose you own a supermarket. Running an association rule\non your sales logs may reveal that people who purchase barbecue sauce and potato\nchips also tend to buy steak. Thus, you may want to place these items close to each\nother.\nSemisupervised learning\nSome algorithms can deal with partially labeled training data, usually a lot of unla‐\nbeled data and a little bit of labeled data. This is called semisupervised learning\n(Figure 1-11).\nSome photo-hosting services, such as Google Photos, are good examples of this. Once\nyou upload all your family photos to the service, it automatically recognizes that the\nsame person A shows up in photos 1, 5, and 11, while another person",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            39
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:398",
+        "strategy": "fixed",
+        "rank": 20,
+        "score": 0.41637641191482544,
+        "chunk_id": 398,
+        "text": "technique used by Ada‐\nBoost.\nFor example, to build an AdaBoost classifier, a first base classifier (such as a Decision\nTree) is trained and used to make predictions on the training set. The relative weight\nof misclassified training instances is then increased. A second classifier is trained\nusing the updated weights and again it makes predictions on the training set, weights\nare updated, and so on (see Figure 7-7).\nFigure 7-7. AdaBoost sequential training with instance weight updates\nFigure 7-8 shows the decision boundaries of five consecutive predictors on the\nmoons dataset (in this example, each predictor is a highly regularized SVM classifier\nwith an RBF kernel14). The first classifier gets many instances wrong, so their weights\n202\n|\nChapter 7: Ensemble Learning and Random Forests\n\nget boosted. The second classifier therefore does a better job on these instances, and\nso on. The plot on the right represents the same sequence of predictors except that\nthe learning rate is halved (i.e., the misclassified instance weights are boosted half as\nmuch at every iteration). As you can see, this sequential learning technique has some\nsimilarities with Gradient Descent, except that instead",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            228,
+            229
+          ]
+        }
+      }
+    ]
+  },
+  "q2": {
+    "query": "What is gradient descent?",
+    "results": [
+      {
+        "candidate_id": "fixed:673",
+        "strategy": "fixed",
+        "rank": 1,
+        "score": 0.6062008142471313,
+        "chunk_id": 673,
+        "text": "this section\n344\n|\nChapter 11: Training Deep Neural Networks\n\n12 “Some methods of speeding up the convergence of iteration methods,” B. Polyak (1964).\nwe will present the most popular ones: Momentum optimization, Nesterov Acceler‐\nated Gradient, AdaGrad, RMSProp, and finally Adam and Nadam optimization.\nMomentum Optimization\nImagine a bowling ball rolling down a gentle slope on a smooth surface: it will start\nout slowly, but it will quickly pick up momentum until it eventually reaches terminal\nvelocity (if there is some friction or air resistance). This is the very simple idea behind\nMomentum optimization, proposed by Boris Polyak in 1964.12 In contrast, regular\nGradient Descent will simply take small regular steps down the slope, so it will take\nmuch more time to reach the bottom.\nRecall that Gradient Descent simply updates the weights θ by directly subtracting the\ngradient of the cost function J(θ) with regards to the weights (∇θJ(θ)) multiplied by\nthe learning rate η. The equation is: θ ← θ – η∇θJ(θ). It does not care about what the\nearlier gradients were. If the local gradient is tiny, it goes very slowly.\nMomentum optimization cares a great deal about what previous gradients were:",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            370,
+            371
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:265",
+        "strategy": "fixed",
+        "rank": 2,
+        "score": 0.5881872177124023,
+        "chunk_id": 265,
+        "text": "solutions to a wide range of problems. The general idea of Gradient Descent is to\ntweak parameters iteratively in order to minimize a cost function.\nGradient Descent\n|\n119\n\nSuppose you are lost in the mountains in a dense fog; you can only feel the slope of\nthe ground below your feet. A good strategy to get to the bottom of the valley quickly\nis to go downhill in the direction of the steepest slope. This is exactly what Gradient\nDescent does: it measures the local gradient of the error function with regards to the\nparameter vector θ, and it goes in the direction of descending gradient. Once the gra‐\ndient is zero, you have reached a minimum!\nConcretely, you start by filling θ with random values (this is called random initializa‐\ntion), and then you improve it gradually, taking one baby step at a time, each step\nattempting to decrease the cost function (e.g., the MSE), until the algorithm converges\nto a minimum (see Figure 4-3).\nFigure 4-3. Gradient Descent\nAn important parameter in Gradient Descent is the size of the steps, determined by\nthe learning rate hyperparameter. If the learning rate is too small, then the algorithm\nwill have to go through many iterations to converge, which",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            145,
+            146
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:267",
+        "strategy": "fixed",
+        "rank": 3,
+        "score": 0.5556378364562988,
+        "chunk_id": 267,
+        "text": "as the global minimum. If it starts on the right, then it will\ntake a very long time to cross the plateau, and if you stop too early you will never\nreach the global minimum.\nGradient Descent\n|\n121\n\n4 Technically speaking, its derivative is Lipschitz continuous.\n5 Since feature 1 is smaller, it takes a larger change in θ1 to affect the cost function, which is why the bowl is\nelongated along the θ1 axis.\nFigure 4-6. Gradient Descent pitfalls\nFortunately, the MSE cost function for a Linear Regression model happens to be a\nconvex function, which means that if you pick any two points on the curve, the line\nsegment joining them never crosses the curve. This implies that there are no local\nminima, just one global minimum. It is also a continuous function with a slope that\nnever changes abruptly.4 These two facts have a great consequence: Gradient Descent\nis guaranteed to approach arbitrarily close the global minimum (if you wait long\nenough and if the learning rate is not too high).\nIn fact, the cost function has the shape of a bowl, but it can be an elongated bowl if\nthe features have very different scales. Figure 4-7 shows Gradient Descent on a train‐\ning set where features 1 and 2 have",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            147,
+            148
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:268",
+        "strategy": "fixed",
+        "rank": 4,
+        "score": 0.5526134967803955,
+        "chunk_id": 268,
+        "text": "the cost function has the shape of a bowl, but it can be an elongated bowl if\nthe features have very different scales. Figure 4-7 shows Gradient Descent on a train‐\ning set where features 1 and 2 have the same scale (on the left), and on a training set\nwhere feature 1 has much smaller values than feature 2 (on the right).5\nFigure 4-7. Gradient Descent with and without feature scaling\n122\n|\nChapter 4: Training Models\n\nAs you can see, on the left the Gradient Descent algorithm goes straight toward the\nminimum, thereby reaching it quickly, whereas on the right it first goes in a direction\nalmost orthogonal to the direction of the global minimum, and it ends with a long\nmarch down an almost flat valley. It will eventually reach the minimum, but it will\ntake a long time.\nWhen using Gradient Descent, you should ensure that all features\nhave a similar scale (e.g., using Scikit-Learn’s StandardScaler\nclass), or else it will take much longer to converge.\nThis diagram also illustrates the fact that training a model means searching for a\ncombination of model parameters that minimizes a cost function (over the training\nset). It is a search in the model’s parameter space: the more parameters a model",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            148,
+            149
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:547",
+        "strategy": "fixed",
+        "rank": 5,
+        "score": 0.5522991418838501,
+        "chunk_id": 547,
+        "text": "whole process is\nrepeated until the network converges to the solution.\nAutomatically computing gradients is called automatic differentia‐\ntion, or autodiff. There are various autodiff techniques, with differ‐\nent pros and cons. The one used by backpropagation is called\nreverse-mode autodiff. It is fast and precise, and is well suited when\nthe function to differentiate has many variables (e.g., connection\nweights) and few outputs (e.g., one loss). If you want to learn more\nabout autodiff, check out ???.\nLet’s run through this algorithm in a bit more detail:\n• It handles one mini-batch at a time (for example containing 32 instances each),\nand it goes through the full training set multiple times. Each pass is called an\nepoch, as we saw in Chapter 4.\n• Each mini-batch is passed to the network’s input layer, which just sends it to the\nfirst hidden layer. The algorithm then computes the output of all the neurons in\nthis layer (for every instance in the mini-batch). The result is passed on to the\nnext layer, its output is computed and passed to the next layer, and so on until we\nget the output of the last layer, the output layer. This is the forward pass: it is\nexactly like making predictions,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            313
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:679",
+        "strategy": "fixed",
+        "rank": 6,
+        "score": 0.5432060956954956,
+        "chunk_id": 679,
+        "text": "to point a bit\nmore toward the global optimum.\nThe AdaGrad algorithm14 achieves this by scaling down the gradient vector along the\nsteepest dimensions (see Equation 11-6):\nEquation 11-6. AdaGrad algorithm\n1 .\ns\ns + ∇θJ θ ⊗∇θJ θ\n2 .\nθ\nθ −η ∇θJ θ ⊘\ns + �\nFaster Optimizers\n|\n347\n\nThe first step accumulates the square of the gradients into the vector s (recall that the\n⊗ symbol represents the element-wise multiplication). This vectorized form is equiv‐\nalent to computing si ← si + (∂ J(θ) / ∂ θi)2 for each element si of the vector s; in other\nwords, each si accumulates the squares of the partial derivative of the cost function\nwith regards to parameter θi. If the cost function is steep along the ith dimension, then\nsi will get larger and larger at each iteration.\nThe second step is almost identical to Gradient Descent, but with one big difference:\nthe gradient vector is scaled down by a factor of �+ � (the ⊘ symbol represents the\nelement-wise division, and ϵ is a smoothing term to avoid division by zero, typically\nset\nto\n10–10).\nThis\nvectorized\nform\nis\nequivalent\nto\ncomputing\nθi\nθi −η ∂J θ / ∂θi/ si + � for all parameters θi (simultaneously).\nIn short, this algorithm decays the learning",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            373,
+            374
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:269",
+        "strategy": "fixed",
+        "rank": 7,
+        "score": 0.5384849309921265,
+        "chunk_id": 269,
+        "text": "a model means searching for a\ncombination of model parameters that minimizes a cost function (over the training\nset). It is a search in the model’s parameter space: the more parameters a model has,\nthe more dimensions this space has, and the harder the search is: searching for a nee‐\ndle in a 300-dimensional haystack is much trickier than in three dimensions. Fortu‐\nnately, since the cost function is convex in the case of Linear Regression, the needle is\nsimply at the bottom of the bowl.\nBatch Gradient Descent\nTo implement Gradient Descent, you need to compute the gradient of the cost func‐\ntion with regards to each model parameter θj. In other words, you need to calculate\nhow much the cost function will change if you change θj just a little bit. This is called\na partial derivative. It is like asking “what is the slope of the mountain under my feet\nif I face east?” and then asking the same question facing north (and so on for all other\ndimensions, if you can imagine a universe with more than three dimensions). Equa‐\ntion 4-5 computes the partial derivative of the cost function with regards to parame‐\nter θj, noted ∂\n∂θj MSE(θ).\nEquation 4-5. Partial derivatives of the cost function\n∂\n∂θj\nMSE",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            149
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:629",
+        "strategy": "fixed",
+        "rank": 8,
+        "score": 0.5307305455207825,
+        "chunk_id": 629,
+        "text": "models tremendously compared to plain Gradient\nDescent. Finally, we will go through a few popular regularization techniques for large\nneural networks.\nWith these tools, you will be able to train very deep nets: welcome to Deep Learning!\nVanishing/Exploding Gradients Problems\nAs we discussed in Chapter 10, the backpropagation algorithm works by going from\nthe output layer to the input layer, propagating the error gradient on the way. Once\nthe algorithm has computed the gradient of the cost function with regards to each\nparameter in the network, it uses these gradients to update each parameter with a\nGradient Descent step.\nUnfortunately, gradients often get smaller and smaller as the algorithm progresses\ndown to the lower layers. As a result, the Gradient Descent update leaves the lower\nlayer connection weights virtually unchanged, and training never converges to a good\nsolution. This is called the vanishing gradients problem. In some cases, the opposite\ncan happen: the gradients can grow bigger and bigger, so many layers get insanely\nlarge weight updates and the algorithm diverges. This is the exploding gradients prob‐\nlem, which is mostly encountered in recurrent neural networks (see",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            352
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:546",
+        "strategy": "fixed",
+        "rank": 9,
+        "score": 0.5222339630126953,
+        "chunk_id": 546,
+        "text": "to find a way to train MLPs, without success.\nBut in 1986, David Rumelhart, Geoffrey Hinton and Ronald Williams published a\ngroundbreaking paper9 introducing the backpropagation training algorithm, which is\nstill used today. In short, it is simply Gradient Descent (introduced in Chapter 4)\n286\n|\nChapter 10: Introduction to Artificial Neural Networks with Keras\n\n10 This technique was actually independently invented several times by various researchers in different fields,\nstarting with P. Werbos in 1974.\nusing an efficient technique for computing the gradients automatically10: in just two\npasses through the network (one forward, one backward), the backpropagation algo‐\nrithm is able to compute the gradient of the network’s error with regards to every sin‐\ngle model parameter. In other words, it can find out how each connection weight and\neach bias term should be tweaked in order to reduce the error. Once it has these gra‐\ndients, it just performs a regular Gradient Descent step, and the whole process is\nrepeated until the network converges to the solution.\nAutomatically computing gradients is called automatic differentia‐\ntion, or autodiff. There are various autodiff techniques, with",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            312,
+            313
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:274",
+        "strategy": "fixed",
+        "rank": 10,
+        "score": 0.5203357934951782,
+        "chunk_id": 274,
+        "text": "within a range of ϵ depending on the\nshape of the cost function. If you divide the tolerance by 10 to have a more precise\nsolution, then the algorithm may have to run about 10 times longer.\nStochastic Gradient Descent\nThe main problem with Batch Gradient Descent is the fact that it uses the whole\ntraining set to compute the gradients at every step, which makes it very slow when\nthe training set is large. At the opposite extreme, Stochastic Gradient Descent just\npicks a random instance in the training set at every step and computes the gradients\nbased only on that single instance. Obviously this makes the algorithm much faster\nsince it has very little data to manipulate at every iteration. It also makes it possible to\ntrain on huge training sets, since only one instance needs to be in memory at each\niteration (SGD can be implemented as an out-of-core algorithm.7)\nOn the other hand, due to its stochastic (i.e., random) nature, this algorithm is much\nless regular than Batch Gradient Descent: instead of gently decreasing until it reaches\nthe minimum, the cost function will bounce up and down, decreasing only on aver‐\nage. Over time it will end up very close to the minimum, but once it gets",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            152
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:271",
+        "strategy": "fixed",
+        "rank": 11,
+        "score": 0.5197122097015381,
+        "chunk_id": 271,
+        "text": "train‐\ning sets (but we will see much faster Gradient Descent algorithms\nshortly). However, Gradient Descent scales well with the number of\nfeatures; training a Linear Regression model when there are hun‐\ndreds of thousands of features is much faster using Gradient\nDescent than using the Normal Equation or SVD decomposition.\nOnce you have the gradient vector, which points uphill, just go in the opposite direc‐\ntion to go downhill. This means subtracting ∇θMSE(θ) from θ. This is where the\nlearning rate η comes into play:6 multiply the gradient vector by η to determine the\nsize of the downhill step (Equation 4-7).\nEquation 4-7. Gradient Descent step\nθ next step = θ −η∇θ MSE θ\nLet’s look at a quick implementation of this algorithm:\neta = 0.1  # learning rate\nn_iterations = 1000\nm = 100\ntheta = np.random.randn(2,1)  # random initialization\nfor iteration in range(n_iterations):\n    gradients = 2/m * X_b.T.dot(X_b.dot(theta) - y)\n    theta = theta - eta * gradients\n124\n|\nChapter 4: Training Models\n\nThat wasn’t too hard! Let’s look at the resulting theta:\n>>> theta\narray([[4.21509616],\n       [2.77011339]])\nHey, that’s exactly what the Normal Equation found! Gradient Descent worked per‐\nfectly.",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            150,
+            151
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:681",
+        "strategy": "fixed",
+        "rank": 12,
+        "score": 0.5190065503120422,
+        "chunk_id": 681,
+        "text": "understanding Adagrad is helpful to grasp the other\nadaptive learning rate optimizers.\n348\n|\nChapter 11: Training Deep Neural Networks\n\n15 This algorithm was created by Geoffrey Hinton and Tijmen Tieleman in 2012, and presented by Geoffrey\nHinton in his Coursera class on neural networks (slides: https://homl.info/57; video: https://homl.info/58).\nAmusingly, since the authors did not write a paper to describe it, researchers often cite “slide 29 in lecture 6”\nin their papers.\n16 “Adam: A Method for Stochastic Optimization,” D. Kingma, J. Ba (2015).\n17 These are estimations of the mean and (uncentered) variance of the gradients. The mean is often called the\nfirst moment, while the variance is often called the second moment, hence the name of the algorithm.\nRMSProp\nAlthough AdaGrad slows down a bit too fast and ends up never converging to the\nglobal optimum, the RMSProp algorithm15 fixes this by accumulating only the gradi‐\nents from the most recent iterations (as opposed to all the gradients since the begin‐\nning of training). It does so by using exponential decay in the first step (see Equation\n11-7).\nEquation 11-7. RMSProp algorithm\n1 .\ns\nβs + 1 −β ∇θJ θ ⊗∇θJ θ\n2 .\nθ\nθ −η ∇θJ θ ⊘\ns",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            374,
+            375
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:270",
+        "strategy": "fixed",
+        "rank": 13,
+        "score": 0.5114989280700684,
+        "chunk_id": 270,
+        "text": "dimensions). Equa‐\ntion 4-5 computes the partial derivative of the cost function with regards to parame‐\nter θj, noted ∂\n∂θj MSE(θ).\nEquation 4-5. Partial derivatives of the cost function\n∂\n∂θj\nMSE θ = 2\nm ∑\ni = 1\nm\nθTx i −y i xj\ni\nInstead of computing these partial derivatives individually, you can use Equation 4-6\nto compute them all in one go. The gradient vector, noted ∇θMSE(θ), contains all the\npartial derivatives of the cost function (one for each model parameter).\nGradient Descent\n|\n123\n\n6 Eta (η) is the 7th letter of the Greek alphabet.\nEquation 4-6. Gradient vector of the cost function\n∇θ MSE θ =\n∂\n∂θ0\nMSE θ\n∂\n∂θ1\nMSE θ\n⋮\n∂\n∂θn\nMSE θ\n= 2\nmXT Xθ −y\nNotice that this formula involves calculations over the full training\nset X, at each Gradient Descent step! This is why the algorithm is\ncalled Batch Gradient Descent: it uses the whole batch of training\ndata at every step (actually, Full Gradient Descent would probably\nbe a better name). As a result it is terribly slow on very large train‐\ning sets (but we will see much faster Gradient Descent algorithms\nshortly). However, Gradient Descent scales well with the number of\nfeatures; training a Linear Regression model when there are",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            149,
+            150
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:266",
+        "strategy": "fixed",
+        "rank": 14,
+        "score": 0.5110781788825989,
+        "chunk_id": 266,
+        "text": "Descent is the size of the steps, determined by\nthe learning rate hyperparameter. If the learning rate is too small, then the algorithm\nwill have to go through many iterations to converge, which will take a long time (see\nFigure 4-4).\n120\n|\nChapter 4: Training Models\n\nFigure 4-4. Learning rate too small\nOn the other hand, if the learning rate is too high, you might jump across the valley\nand end up on the other side, possibly even higher up than you were before. This\nmight make the algorithm diverge, with larger and larger values, failing to find a good\nsolution (see Figure 4-5).\nFigure 4-5. Learning rate too large\nFinally, not all cost functions look like nice regular bowls. There may be holes, ridges,\nplateaus, and all sorts of irregular terrains, making convergence to the minimum very\ndifficult. Figure 4-6 shows the two main challenges with Gradient Descent: if the ran‐\ndom initialization starts the algorithm on the left, then it will converge to a local mini‐\nmum, which is not as good as the global minimum. If it starts on the right, then it will\ntake a very long time to cross the plateau, and if you stop too early you will never\nreach the global minimum.\nGradient Descent\n|\n121\n\n4",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            146,
+            147,
+            148
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:685",
+        "strategy": "fixed",
+        "rank": 15,
+        "score": 0.5097662210464478,
+        "chunk_id": 685,
+        "text": "Adaptive Gradient Methods in Machine Learning,” A. C. Wilson et al. (2017).\n• Adamax, introduced in the same paper as Adam: notice that in step 2 of Equation\n11-8, Adam accumulates the squares of the gradients in s (with a greater weight\nfor more recent weights). In step 5, if we ignore ϵ and steps 3 and 4 (which are\ntechnical details anyway), Adam just scales down the parameter updates by the\nsquare root of s. In short, Adam scales down the parameter updates by the ℓ2\nnorm of the time-decayed gradients (recall that the ℓ2 norm is the square root of\nthe sum of squares). Adamax just replaces the ℓ2 norm with the ℓ∞ norm (a fancy\nway of saying the max). Specifically, it replaces step 2 in Equation 11-8 with\n�\nmax β2�, ∇θJ θ , it drops step 4, and in step 5 it scales down the gradient\nupdates by a factor of s, which is just the max of the time-decayed gradients. In\npractice, this can make Adamax more stable than Adam, but this really depends\non the dataset, and in general Adam actually performs better. So it’s just one\nmore optimizer you can try if you experience problems with Adam on some task.\n• Nadam optimization18 is more important: it is simply Adam optimization plus\nthe Nesterov",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            377
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:772",
+        "strategy": "fixed",
+        "rank": 16,
+        "score": 0.5095130205154419,
+        "chunk_id": 772,
+        "text": "(see Chapter 10 and ???) to compute gradients\nautomatically, let’s consider a simple toy function:\ndef f(w1, w2):\n    return 3 * w1 ** 2 + 2 * w1 * w2\nIf you know calculus, you can analytically find that the partial derivative of this func‐\ntion with regards to w1 is 6 * w1 + 2 * w2. You can also find that its partial derivative\nwith regards to w2 is 2 * w1. For example, at the point (w1, w2) = (5, 3), these par‐\nCustomizing Models and Training Algorithms\n|\n389\n\ntial derivatives are equal to 36 and 10, respectively, so the gradient vector at this point\nis (36, 10). But if this were a neural network, the function would be much more com‐\nplex, typically with tens of thousands of parameters, and finding the partial deriva‐\ntives analytically by hand would be an almost impossible task. One solution could be\nto compute an approximation of each partial derivative by measuring how much the\nfunction’s output changes when you tweak the corresponding parameter:\n>>> w1, w2 = 5, 3\n>>> eps = 1e-6\n>>> (f(w1 + eps, w2) - f(w1, w2)) / eps\n36.000003007075065\n>>> (f(w1, w2 + eps) - f(w1, w2)) / eps\n10.000000003174137\nLooks about right! This works rather well and it is trivial to implement, but it is",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            415,
+            416
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:10",
+        "strategy": "fixed",
+        "rank": 17,
+        "score": 0.5066471695899963,
+        "chunk_id": 10,
+        "text": "110\n4. Training Models. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  113\nLinear Regression                                                                                                        114\nThe Normal Equation                                                                                              116\nComputational Complexity                                                                                    119\nGradient Descent                                                                                                         119\nBatch Gradient Descent                                                                                           123\nStochastic Gradient Descent                                                                                   126\nMini-batch Gradient Descent                                                                                 129\nPolynomial Regression                                                                                                130\nLearning Curves",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            7
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:307",
+        "strategy": "fixed",
+        "rank": 18,
+        "score": 0.502644956111908,
+        "chunk_id": 307,
+        "text": "looks very much like Equation 4-5: for each instance it computes the\nprediction error and multiplies it by the jth feature value, and then it computes the\naverage over all training instances. Once you have the gradient vector containing all\nthe partial derivatives you can use it in the Batch Gradient Descent algorithm. That’s\nit: you now know how to train a Logistic Regression model. For Stochastic GD you\nwould of course just take one instance at a time, and for Mini-batch GD you would\nuse a mini-batch at a time.\nDecision Boundaries\nLet’s use the iris dataset to illustrate Logistic Regression. This is a famous dataset that\ncontains the sepal and petal length and width of 150 iris flowers of three different\nspecies: Iris-Setosa, Iris-Versicolor, and Iris-Virginica (see Figure 4-22).\n146\n|\nChapter 4: Training Models\n\n16 Photos reproduced from the corresponding Wikipedia pages. Iris-Virginica photo by Frank Mayfield (Crea‐\ntive Commons BY-SA 2.0), Iris-Versicolor photo by D. Gordon E. Robertson (Creative Commons BY-SA 3.0),\nand Iris-Setosa photo is public domain.\n17 NumPy’s reshape() function allows one dimension to be –1, which means “unspecified”: the value is inferred\nfrom the length",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            172,
+            173
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:687",
+        "strategy": "fixed",
+        "rank": 19,
+        "score": 0.49226462841033936,
+        "chunk_id": 687,
+        "text": "partial\nderivatives (Jacobians). The optimization literature contains amazing algorithms\nbased on the second-order partial derivatives (the Hessians, which are the partial\nderivatives of the Jacobians). Unfortunately, these algorithms are very hard to apply\nto deep neural networks because there are n2 Hessians per output (where n is the\nnumber of parameters), as opposed to just n Jacobians per output. Since DNNs typi‐\ncally have tens of thousands of parameters, the second-order optimization algorithms\nFaster Optimizers\n|\n351\n\n20 “Primal-Dual Subgradient Methods for Convex Problems,” Yurii Nesterov (2005).\n21 “Ad Click Prediction: a View from the Trenches,” H. McMahan et al. (2013).\noften don’t even fit in memory, and even when they do, computing the Hessians is\njust too slow.\nTraining Sparse Models\nAll the optimization algorithms just presented produce dense models, meaning that\nmost parameters will be nonzero. If you need a blazingly fast model at runtime, or if\nyou need it to take up less memory, you may prefer to end up with a sparse model\ninstead.\nOne trivial way to achieve this is to train the model as usual, then get rid of the tiny\nweights (set them to 0). However, this will",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            377,
+            378
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:630",
+        "strategy": "fixed",
+        "rank": 20,
+        "score": 0.48647341132164,
+        "chunk_id": 630,
+        "text": "bigger and bigger, so many layers get insanely\nlarge weight updates and the algorithm diverges. This is the exploding gradients prob‐\nlem, which is mostly encountered in recurrent neural networks (see ???). More gener‐\nally, deep neural networks suffer from unstable gradients; different layers may learn at\nwidely different speeds.\nAlthough this unfortunate behavior has been empirically observed for quite a while\n(it was one of the reasons why deep neural networks were mostly abandoned for a\nlong time), it is only around 2010 that significant progress was made in understand‐\ning it. A paper titled “Understanding the Difficulty of Training Deep Feedforward\nNeural Networks” by Xavier Glorot and Yoshua Bengio1 found a few suspects, includ‐\ning the combination of the popular logistic sigmoid activation function and the\nweight initialization technique that was most popular at the time, namely random ini‐\ntialization using a normal distribution with a mean of 0 and a standard deviation of 1.\nIn short, they showed that with this activation function and this initialization scheme,\nthe variance of the outputs of each layer is much greater than the variance of its\ninputs. Going forward in the",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            352
+          ]
+        }
+      }
+    ]
+  },
+  "q3": {
+    "query": "Define XGB",
+    "results": [
+      {
+        "candidate_id": "fixed:410",
+        "strategy": "fixed",
+        "rank": 1,
+        "score": 0.3508087396621704,
+        "chunk_id": 410,
+        "text": "entries in ML competitions. XGBoost’s API is quite similar to Scikit-Learn’s:\nimport xgboost\nxgb_reg = xgboost.XGBRegressor()\nxgb_reg.fit(X_train, y_train)\ny_pred = xgb_reg.predict(X_val)\nXGBoost also offers several nice features, such as automatically taking care of early\nstopping:\nxgb_reg.fit(X_train, y_train,\n            eval_set=[(X_val, y_val)], early_stopping_rounds=2)\ny_pred = xgb_reg.predict(X_val)\nYou should definitely check it out!\nStacking\nThe last Ensemble method we will discuss in this chapter is called stacking (short for\nstacked generalization).18 It is based on a simple idea: instead of using trivial functions\n(such as hard voting) to aggregate the predictions of all predictors in an ensemble,\nwhy don’t we train a model to perform this aggregation? Figure 7-12 shows such an\nensemble performing a regression task on a new instance. Each of the bottom three\npredictors predicts a different value (3.1, 2.7, and 2.9), and then the final predictor\n(called a blender, or a meta learner) takes these predictions as inputs and makes the\nfinal prediction (3.0).\n210\n|\nChapter 7: Ensemble Learning and Random Forests\n\n19 Alternatively, it is possible to use out-of-fold predictions.",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            236,
+            237
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:406",
+        "strategy": "fixed",
+        "rank": 2,
+        "score": 0.26834896206855774,
+        "chunk_id": 406,
+        "text": "gbrt.fit(X, y)\n206\n|\nChapter 7: Ensemble Learning and Random Forests\n\nFigure 7-9. Gradient Boosting\nThe learning_rate hyperparameter scales the contribution of each tree. If you set it\nto a low value, such as 0.1, you will need more trees in the ensemble to fit the train‐\ning set, but the predictions will usually generalize better. This is a regularization tech‐\nnique called shrinkage. Figure 7-10 shows two GBRT ensembles trained with a low\nlearning rate: the one on the left does not have enough trees to fit the training set,\nwhile the one on the right has too many trees and overfits the training set.\nBoosting\n|\n207\n\nFigure 7-10. GBRT ensembles with not enough predictors (left) and too many (right)\nIn order to find the optimal number of trees, you can use early stopping (see Chap‐\nter 4). A simple way to implement this is to use the staged_predict() method: it\nreturns an iterator over the predictions made by the ensemble at each stage of train‐\ning (with one tree, two trees, etc.). The following code trains a GBRT ensemble with\n120 trees, then measures the validation error at each stage of training to find the opti‐\nmal number of trees, and finally trains another GBRT ensemble using",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            232,
+            233,
+            234
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:914",
+        "strategy": "fixed",
+        "rank": 3,
+        "score": 0.22894182801246643,
+        "chunk_id": 914,
+        "text": "(granted, that’s what Figure 14-19 represents, but it is just for illustration pur‐\nposes). For this reason, the Xception architecture starts with 2 regular convolutional\nlayers, but then the rest of the architecture uses only separable convolutions (34 in\n460\n|\nChapter 14: Deep Computer Vision Using Convolutional Neural Networks\n\n19 “Crafting GBD-Net for Object Detection,” X. Zeng et al. (2016).\n20 “Squeeze-and-Excitation Networks,” Jie Hu et al. (2017)\nall), plus a few max pooling layers and the usual final layers (a global average pooling\nlayer, and a dense output layer).\nYou might wonder why Xception is considered a variant of GoogLeNet, since it con‐\ntains no inception module at all? Well, as we discussed earlier, an Inception module\ncontains convolutional layers with 1 × 1 filters: these look exclusively for cross-\nchannel patterns. However, the convolution layers that sit on top of them are regular\nconvolutional layers that look both for spatial and cross-channel patterns. So you can\nthink of an Inception module as an intermediate between a regular convolutional\nlayer (which considers spatial patterns and cross-channel patterns jointly) and a sepa‐\nrable convolutional layer (which",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            486,
+            487
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:409",
+        "strategy": "fixed",
+        "rank": 4,
+        "score": 0.22530251741409302,
+        "chunk_id": 409,
+        "text": "fraction of training instances to be used for training each tree. For\nexample, if subsample=0.25, then each tree is trained on 25% of the training instan‐\nces, selected randomly. As you can probably guess by now, this trades a higher bias\nfor a lower variance. It also speeds up training considerably. This technique is called\nStochastic Gradient Boosting.\nBoosting\n|\n209\n\n18 “Stacked Generalization,” D. Wolpert (1992).\nIt is possible to use Gradient Boosting with other cost functions.\nThis is controlled by the loss hyperparameter (see Scikit-Learn’s\ndocumentation for more details).\nIt is worth noting that an optimized implementation of Gradient Boosting is available\nin the popular python library XGBoost, which stands for Extreme Gradient Boosting.\nThis package was initially developed by Tianqi Chen as part of the Distributed (Deep)\nMachine Learning Community (DMLC), and it aims at being extremely fast, scalable\nand portable. In fact, XGBoost is often an important component of the winning\nentries in ML competitions. XGBoost’s API is quite similar to Scikit-Learn’s:\nimport xgboost\nxgb_reg = xgboost.XGBRegressor()\nxgb_reg.fit(X_train, y_train)\ny_pred = xgb_reg.predict(X_val)\nXGBoost also",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            235,
+            236
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:51",
+        "strategy": "fixed",
+        "rank": 5,
+        "score": 0.2225506454706192,
+        "chunk_id": 51,
+        "text": "of 14\n15\n~75%\nProcessing Sequences Using RNNs and CNNs\nPart of 14\n16\n~90%\nNatural Language Processing with RNNs and Attention\n15\n17\n~75%\nAutoencoders and GANs\n16\n18\n~75%\nReinforcement Learning\nPart of 12\n19\n100% rewritten\nDeploying your TensorFlow Models\nMore specifically, here are the main changes for each 2nd edition chapter (other than\nclarifications, corrections and code updates):\n• Chapter 1\n— Added a section on handling mismatch between the training set and the vali‐\ndation & test sets.\n• Chapter 2\n— Added how to compute a confidence interval.\n— Improved the installation instructions (e.g., for Windows).\n— Introduced the upgraded OneHotEncoder and the new ColumnTransformer.\n• Chapter 4\n— Explained the need for training instances to be Independent and Identically\nDistributed (IID).\n• Chapter 7\n— Added a short section about XGBoost.\nxx\n|\nPreface\n\n• Chapter 9 – new chapter including:\n— Clustering with K-Means, how to choose the number of clusters, how to use it\nfor dimensionality reduction, semi-supervised learning, image segmentation,\nand more.\n— The DBSCAN clustering algorithm and an overview of other clustering algo‐\nrithms available in Scikit-Learn.\n— Gaussian mixture models,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:407",
+        "strategy": "fixed",
+        "rank": 6,
+        "score": 0.2168269157409668,
+        "chunk_id": 407,
+        "text": "following code trains a GBRT ensemble with\n120 trees, then measures the validation error at each stage of training to find the opti‐\nmal number of trees, and finally trains another GBRT ensemble using the optimal\nnumber of trees:\nimport numpy as np\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import mean_squared_error\nX_train, X_val, y_train, y_val = train_test_split(X, y)\ngbrt = GradientBoostingRegressor(max_depth=2, n_estimators=120)\ngbrt.fit(X_train, y_train)\nerrors = [mean_squared_error(y_val, y_pred)\n          for y_pred in gbrt.staged_predict(X_val)]\nbst_n_estimators = np.argmin(errors)\ngbrt_best = GradientBoostingRegressor(max_depth=2,n_estimators=bst_n_estimators)\ngbrt_best.fit(X_train, y_train)\nThe validation errors are represented on the left of Figure 7-11, and the best model’s\npredictions are represented on the right.\n208\n|\nChapter 7: Ensemble Learning and Random Forests\n\nFigure 7-11. Tuning the number of trees using early stopping\nIt is also possible to implement early stopping by actually stopping training early\n(instead of training a large number of trees first and then looking back to find the\noptimal number). You can do so by setting warm_start=True,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            234,
+            235
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:480",
+        "strategy": "fixed",
+        "rank": 7,
+        "score": 0.2145424634218216,
+        "chunk_id": 480,
+        "text": "containing\nthe intensities of red, green and blue, each between 0.0 and 1.0 (or between 0 and 255\nif you use imageio.imread()). Some images may have less channels, such as gray‐\nscale images (one channel), or more channels, such as images with an additional\nalpha channel for transparency, or satellite images which often contain channels for\nmany light frequencies (e.g., infrared). The following code reshapes the array to get a\nlong list of RGB colors, then it clusters these colors using K-Means. For example, it\nmay identify a color cluster for all shades of green. Next, for each color (e.g., dark\ngreen), it looks for the mean color of the pixel’s color cluster. For example, all shades\nof green may be replaced with the same light green color (assuming the mean color of\nthe green cluster is light green). Finally it reshapes this long list of colors to get the\nsame shape as the original image. And we’re done!\nX = image.reshape(-1, 3)\nkmeans = KMeans(n_clusters=8).fit(X)\nsegmented_img = kmeans.cluster_centers_[kmeans.labels_]\nsegmented_img = segmented_img.reshape(image.shape)\nThis outputs the image shown in the upper right of Figure 9-12. You can experiment\nwith various numbers of clusters,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            277
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:880",
+        "strategy": "fixed",
+        "rank": 8,
+        "score": 0.21027138829231262,
+        "chunk_id": 880,
+        "text": "= 1,000 × 1,000 × 8 bits.\nRGB image (three channels), then the number of parameters is (5 × 5 × 3 + 1) × 200\n= 15,200 (the +1 corresponds to the bias terms), which is fairly small compared to a\nfully connected layer.7 However, each of the 200 feature maps contains 150 × 100 neu‐\nrons, and each of these neurons needs to compute a weighted sum of its 5 × 5 × 3 =\n75 inputs: that’s a total of 225 million float multiplications. Not as bad as a fully con‐\nnected layer, but still quite computationally intensive. Moreover, if the feature maps\nare represented using 32-bit floats, then the convolutional layer’s output will occupy\n200 × 150 × 100 × 32 = 96 million bits (12 MB) of RAM.8 And that’s just for one\ninstance! If a training batch contains 100 instances, then this layer will use up 1.2 GB\nof RAM!\nDuring inference (i.e., when making a prediction for a new instance) the RAM occu‐\npied by one layer can be released as soon as the next layer has been computed, so you\nonly need as much RAM as required by two consecutive layers. But during training\neverything computed during the forward pass needs to be preserved for the reverse\npass, so the amount of RAM needed is (at least) the total amount",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            468
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:460",
+        "strategy": "fixed",
+        "rank": 9,
+        "score": 0.2056262195110321,
+        "chunk_id": 460,
+        "text": "clearly see 5 blobs\nof instances. The K-Means algorithm is a simple algorithm capable of clustering this\nkind of dataset very quickly and efficiently, often in just a few iterations. It was pro‐\nposed by Stuart Lloyd at the Bell Labs in 1957 as a technique for pulse-code modula‐\ntion, but it was only published outside of the company in 1982, in a paper titled\n“Least square quantization in PCM”.1 By then, in 1965, Edward W. Forgy had pub‐\nlished virtually the same algorithm, so K-Means is sometimes referred to as Lloyd-\nForgy.\n240\n|\nChapter 9: Unsupervised Learning Techniques\n\nFigure 9-2. An unlabeled dataset composed of five blobs of instances\nLet’s train a K-Means clusterer on this dataset. It will try to find each blob’s center and\nassign each instance to the closest blob:\nfrom sklearn.cluster import KMeans\nk = 5\nkmeans = KMeans(n_clusters=k)\ny_pred = kmeans.fit_predict(X)\nNote that you have to specify the number of clusters k that the algorithm must find.\nIn this example, it is pretty obvious from looking at the data that k should be set to 5,\nbut in general it is not that easy. We will discuss this shortly.\nEach instance was assigned to one of the 5 clusters. In the context of clustering,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            266,
+            267
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:522",
+        "strategy": "fixed",
+        "rank": 10,
+        "score": 0.1851647049188614,
+        "chunk_id": 522,
+        "text": "the ELBO. In mean field varia‐\ntional inference, it is necessary to pick the family of distributions q(z; λ) and the prior\np(z) very carefully to ensure that the equation for the ELBO simplifies to a form that\ncan actually be computed. Unfortunately, there is no general way to do this, it\ndepends on the task and requires some mathematical skills. For example, the distribu‐\ntions and lower bound equations used in Scikit-Learn’s BayesianGaussianMixture\nclass are presented in the documentation. From these equations it is possible to derive\nupdate equations for the cluster parameters and assignment variables: these are then\nused very much like in the Expectation-Maximization algorithm. In fact, the compu‐\ntational complexity of the BayesianGaussianMixture class is similar to that of the\nGaussianMixture class (but generally significantly slower). A simpler approach to\nmaximizing the ELBO is called black box stochastic variational inference (BBSVI): at\neach iteration, a few samples are drawn from q and they are used to estimate the gra‐\ndients of the ELBO with regards to the variational parameters λ, which are then used\nin a gradient ascent step. This approach makes it possible to use Bayesian",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            299
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:19",
+        "strategy": "fixed",
+        "rank": 11,
+        "score": 0.18424266576766968,
+        "chunk_id": 19,
+        "text": "225\nChoosing the Right Number of Dimensions                                                       225\nPCA for Compression                                                                                             226\nvi\n|\nTable of Contents\n\nRandomized PCA                                                                                                    227\nIncremental PCA                                                                                                     227\nKernel PCA                                                                                                                   228\nSelecting a Kernel and Tuning Hyperparameters                                                229\nLLE                                                                                                                                 232\nOther Dimensionality Reduction Techniques                                                         234\nExercises                                                                                                                        235\n9. Unsupervised Learning Techniques. . . . . . . . . . . . . . . . . . . . . . . . .",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            8,
+            9
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:459",
+        "strategy": "fixed",
+        "rank": 12,
+        "score": 0.17838504910469055,
+        "chunk_id": 459,
+        "text": "color with the mean color of its cluster, it is possible to reduce the\nnumber of different colors in the image considerably. This technique is used in\nmany object detection and tracking systems, as it makes it easier to detect the\ncontour of each object.\nThere is no universal definition of what a cluster is: it really depends on the context,\nand different algorithms will capture different kinds of clusters. For example, some\nalgorithms look for instances centered around a particular point, called a centroid.\nOthers look for continuous regions of densely packed instances: these clusters can\ntake on any shape. Some algorithms are hierarchical, looking for clusters of clusters.\nAnd the list goes on.\nIn this section, we will look at two popular clustering algorithms: K-Means and\nDBSCAN, and we will show some of their applications, such as non-linear dimen‐\nsionality reduction, semi-supervised learning and anomaly detection.\nK-Means\nConsider the unlabeled dataset represented in Figure 9-2: you can clearly see 5 blobs\nof instances. The K-Means algorithm is a simple algorithm capable of clustering this\nkind of dataset very quickly and efficiently, often in just a few iterations. It was pro‐\nposed",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            266
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:420",
+        "strategy": "fixed",
+        "rank": 13,
+        "score": 0.17559611797332764,
+        "chunk_id": 420,
+        "text": "randomly in a unit\nsquare, the distance between these two points will be, on average, roughly 0.52. If you\npick two random points in a unit 3D cube, the average distance will be roughly 0.66.\nBut what about two points picked randomly in a 1,000,000-dimensional hypercube?\nWell, the average distance, believe it or not, will be about 408.25 (roughly\n1, 000, 000/6)! This is quite counterintuitive: how can two points be so far apart\nwhen they both lie within the same unit hypercube? This fact implies that high-\ndimensional datasets are at risk of being very sparse: most training instances are\nlikely to be far away from each other. Of course, this also means that a new instance\nwill likely be far away from any training instance, making predictions much less relia‐\nble than in lower dimensions, since they will be based on much larger extrapolations.\nIn short, the more dimensions the training set has, the greater the risk of overfitting\nit.\nIn theory, one solution to the curse of dimensionality could be to increase the size of\nthe training set to reach a sufficient density of training instances. Unfortunately, in\npractice, the number of training instances required to reach a given density grows\nexponentially",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            243
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:883",
+        "strategy": "fixed",
+        "rank": 14,
+        "score": 0.16891193389892578,
+        "chunk_id": 883,
+        "text": "has half the height and half the width of the input\nimage (rounded down since we use no padding).\nFigure 14-8. Max pooling layer (2 × 2 pooling kernel, stride 2, no padding)\nA pooling layer typically works on every input channel independ‐\nently, so the output depth is the same as the input depth.\nOther than reducing computations, memory usage and the number of parameters, a\nmax pooling layer also introduces some level of invariance to small translations, as\nshown in Figure 14-9. Here we assume that the bright pixels have a lower value than\ndark pixels, and we consider 3 images (A, B, C) going through a max pooling layer\nwith a 2 × 2 kernel and stride 2. Images B and C are the same as image A, but shifted\nby one and two pixels to the right. As you can see, the outputs of the max pooling\nlayer for images A and B are identical. This is what translation invariance means.\nHowever, for image C, the output is different: it is shifted by one pixel to the right\n(but there is still 75% invariance). By inserting a max pooling layer every few layers in\na CNN, it is possible to get some level of translation invariance at a larger scale.\nMoreover, max pooling also offers a small amount of rotational",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            469
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:419",
+        "strategy": "fixed",
+        "rank": 15,
+        "score": 0.16684848070144653,
+        "chunk_id": 419,
+        "text": "3D space at https://homl.info/30. Image by Wikipedia user Nerd‐\nBoy1392 (Creative Commons BY-SA 3.0). Reproduced from https://en.wikipedia.org/wiki/Tesseract.\n3 Fun fact: anyone you know is probably an extremist in at least one dimension (e.g., how much sugar they put\nin their coffee), if you consider enough dimensions.\nFigure 8-1. Point, segment, square, cube, and tesseract (0D to 4D hypercubes)2\nIt turns out that many things behave very differently in high-dimensional space. For\nexample, if you pick a random point in a unit square (a 1 × 1 square), it will have only\nabout a 0.4% chance of being located less than 0.001 from a border (in other words, it\nis very unlikely that a random point will be “extreme” along any dimension). But in a\n10,000-dimensional unit hypercube (a 1 × 1 × ⋯ × 1 cube, with ten thousand 1s), this\nprobability is greater than 99.999999%. Most points in a high-dimensional hypercube\nare very close to the border.3\nHere is a more troublesome difference: if you pick two points randomly in a unit\nsquare, the distance between these two points will be, on average, roughly 0.52. If you\npick two random points in a unit 3D cube, the average distance will be roughly 0.66.\nBut",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            243
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:244",
+        "strategy": "fixed",
+        "rank": 16,
+        "score": 0.16587334871292114,
+        "chunk_id": 244,
+        "text": "plot_digits(X_ab[:25], images_per_row=5)\nplt.subplot(223); plot_digits(X_ba[:25], images_per_row=5)\nplt.subplot(224); plot_digits(X_bb[:25], images_per_row=5)\nplt.show()\nThe two 5×5 blocks on the left show digits classified as 3s, and the two 5×5 blocks on\nthe right show images classified as 5s. Some of the digits that the classifier gets wrong\n(i.e., in the bottom-left and top-right blocks) are so badly written that even a human\nwould have trouble classifying them (e.g., the 5 on the 1st row and 2nd column truly\nlooks like a badly written 3). However, most misclassified images seem like obvious\nerrors to us, and it’s hard to understand why the classifier made the mistakes it did.3\nThe reason is that we used a simple SGDClassifier, which is a linear model. All it\ndoes is assign a weight per class to each pixel, and when it sees a new image it just\nsums up the weighted pixel intensities to get a score for each class. So since 3s and 5s\ndiffer only by a few pixels, this model will easily confuse them.\nError Analysis\n|\n107\n\nThe main difference between 3s and 5s is the position of the small line that joins the\ntop line to the bottom arc. If you draw a 3 with the junction slightly shifted",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            133,
+            134
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:249",
+        "strategy": "fixed",
+        "rank": 17,
+        "score": 0.16531559824943542,
+        "chunk_id": 249,
+        "text": "classification and regression is sometimes blurry,\nsuch as in this example. Arguably, predicting pixel intensity is more\nakin to regression than to classification. Moreover, multioutput\nsystems are not limited to classification tasks; you could even have\na system that outputs multiple labels per instance, including both\nclass labels and value labels.\nLet’s start by creating the training and test sets by taking the MNIST images and\nadding noise to their pixel intensities using NumPy’s randint() function. The target\nimages will be the original images:\nnoise = np.random.randint(0, 100, (len(X_train), 784))\nX_train_mod = X_train + noise\nnoise = np.random.randint(0, 100, (len(X_test), 784))\nX_test_mod = X_test + noise\ny_train_mod = X_train\ny_test_mod = X_test\nMultioutput Classification\n|\n109\n\n5 You can use the shift() function from the scipy.ndimage.interpolation module. For example,\nshift(image, [2, 1], cval=0) shifts the image 2 pixels down and 1 pixel to the right.\nLet’s take a peek at an image from the test set (yes, we’re snooping on the test data, so\nyou should be frowning right now):\nOn the left is the noisy input image, and on the right is the clean target image. Now\nlet’s train",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            135,
+            136
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:646",
+        "strategy": "fixed",
+        "rank": 18,
+        "score": 0.1635722517967224,
+        "chunk_id": 646,
+        "text": "over the whole mini-batch B (it con‐\ntains one mean per input).\nVanishing/Exploding Gradients Problems\n|\n333\n\n• σB is the vector of input standard deviations, also evaluated over the whole mini-\nbatch (it contains one standard deviation per input).\n• mB is the number of instances in the mini-batch.\n• x(i) is the vector of zero-centered and normalized inputs for instance i.\n• γ is the output scale parameter vector for the layer (it contains one scale parame‐\nter per input).\n• ⊗ represents element-wise multiplication (each input is multiplied by its corre‐\nsponding output scale parameter).\n• β is the output shift (offset) parameter vector for the layer (it contains one offset\nparameter per input). Each input is offset by its corresponding shift parameter.\n• ϵ is a tiny number to avoid division by zero (typically 10–5). This is called a\nsmoothing term.\n• z(i) is the output of the BN operation: it is a rescaled and shifted version of the\ninputs.\nSo during training, BN just standardizes its inputs then rescales and offsets them.\nGood! What about at test time? Well it is not that simple. Indeed, we may need to\nmake predictions for individual instances rather than for batches of instances:",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            359,
+            360
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:408",
+        "strategy": "fixed",
+        "rank": 19,
+        "score": 0.16122043132781982,
+        "chunk_id": 408,
+        "text": "early stopping by actually stopping training early\n(instead of training a large number of trees first and then looking back to find the\noptimal number). You can do so by setting warm_start=True, which makes Scikit-\nLearn keep existing trees when the fit() method is called, allowing incremental\ntraining. The following code stops training when the validation error does not\nimprove for five iterations in a row:\ngbrt = GradientBoostingRegressor(max_depth=2, warm_start=True)\nmin_val_error = float(\"inf\")\nerror_going_up = 0\nfor n_estimators in range(1, 120):\n    gbrt.n_estimators = n_estimators\n    gbrt.fit(X_train, y_train)\n    y_pred = gbrt.predict(X_val)\n    val_error = mean_squared_error(y_val, y_pred)\n    if val_error < min_val_error:\n        min_val_error = val_error\n        error_going_up = 0\n    else:\n        error_going_up += 1\n        if error_going_up == 5:\n            break  # early stopping\nThe GradientBoostingRegressor class also supports a subsample hyperparameter,\nwhich specifies the fraction of training instances to be used for training each tree. For\nexample, if subsample=0.25, then each tree is trained on 25% of the training instan‐\nces, selected randomly. As you can probably",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            235
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:435",
+        "strategy": "fixed",
+        "rank": 20,
+        "score": 0.1581205129623413,
+        "chunk_id": 435,
+        "text": "to the original data.\nThe mean squared distance between the original data and the reconstructed data\n(compressed and then decompressed) is called the reconstruction error. For example,\nthe following code compresses the MNIST dataset down to 154 dimensions, then uses\nthe inverse_transform() method to decompress it back to 784 dimensions.\nFigure 8-9 shows a few digits from the original training set (on the left), and the cor‐\nresponding digits after compression and decompression. You can see that there is a\nslight image quality loss, but the digits are still mostly intact.\npca = PCA(n_components = 154)\nX_reduced = pca.fit_transform(X_train)\nX_recovered = pca.inverse_transform(X_reduced)\n226\n|\nChapter 8: Dimensionality Reduction\n\nFigure 8-9. MNIST compression preserving 95% of the variance\nThe equation of the inverse transformation is shown in Equation 8-3.\nEquation 8-3. PCA inverse transformation, back to the original number of\ndimensions\nXrecovered = Xd‐projWd\nT\nRandomized PCA\nIf you set the svd_solver hyperparameter to \"randomized\", Scikit-Learn uses a sto‐\nchastic algorithm called Randomized PCA that quickly finds an approximation of the\nfirst d principal components. Its computational",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            252,
+            253
+          ]
+        }
+      }
+    ]
+  },
+  "q4": {
+    "query": "What is HyperParameter Tuning?",
+    "results": [
+      {
+        "candidate_id": "fixed:612",
+        "strategy": "fixed",
+        "rank": 1,
+        "score": 0.4716947674751282,
+        "chunk_id": 612,
+        "text": "Engine has a hyperparameter tuning service. Other com‐\npanies provide APIs for hyperparameter optimization, such as Arimo, SigOpt, Oscar\nand many more.\nHyperparameter tuning is still an active area of research. Evolutionary algorithms are\nmaking a comeback lately. For example, check out DeepMind’s excellent 2017 paper16,\nwhere they jointly optimize a population of models and their hyperparameters. Goo‐\ngle also used an evolutionary approach, not just to search for hyperparameters, but\nalso to look for the best neural network architecture for the problem. They call this\nAutoML, and it is already available as a cloud service. Perhaps the days of building\nneural networks manually will soon be over? Check out Google’s post on this topic. In\nfact, evolutionary algorithms have also been used successfully to train individual neu‐\nral networks, replacing the ubiquitous Gradient Descent! See this 2017 post by Uber\nwhere they introduce their Deep Neuroevolution technique.\nDespite all this exciting progress, and all these tools and services, it still helps to have\nan idea of what values are reasonable for each hyperparameter, so you can build a\nquick prototype, and restrict the search space. Here",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            344
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:4",
+        "strategy": "fixed",
+        "rank": 2,
+        "score": 0.4608435034751892,
+        "chunk_id": 4,
+        "text": "Testing and Validating                                                                                                   31\nHyperparameter Tuning and Model Selection                                                       32\nData Mismatch                                                                                                           33\nExercises                                                                                                                          34\n2. End-to-End Machine Learning Project. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  37\nWorking with Real Data                                                                                                38\nLook at the Big Picture                                                                                                  39\niii\n\nFrame the Problem                                                                                                    39\nSelect a Performance Measure                                                                                  42\nCheck the Assumptions                                                                                             45\nGet",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:102",
+        "strategy": "fixed",
+        "rank": 3,
+        "score": 0.41973555088043213,
+        "chunk_id": 102,
+        "text": "a bit less the training data that the\nmodel was trained on, but actually allows it to generalize better to new examples.\nMain Challenges of Machine Learning\n|\n29\n\nFigure 1-23. Regularization reduces the risk of overfitting\nThe amount of regularization to apply during learning can be controlled by a hyper‐\nparameter. A hyperparameter is a parameter of a learning algorithm (not of the\nmodel). As such, it is not affected by the learning algorithm itself; it must be set prior\nto training and remains constant during training. If you set the regularization hyper‐\nparameter to a very large value, you will get an almost flat model (a slope close to\nzero); the learning algorithm will almost certainly not overfit the training data, but it\nwill be less likely to find a good solution. Tuning hyperparameters is an important\npart of building a Machine Learning system (you will see a detailed example in the\nnext chapter).\nUnderfitting the Training Data\nAs you might guess, underfitting is the opposite of overfitting: it occurs when your\nmodel is too simple to learn the underlying structure of the data. For example, a lin‐\near model of life satisfaction is prone to underfit; reality is just more complex",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            55,
+            56
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:169",
+        "strategy": "fixed",
+        "rank": 4,
+        "score": 0.4053438901901245,
+        "chunk_id": 169,
+        "text": "hyperparameters are accessible directly via public\ninstance variables (e.g., imputer.strategy), and all the estimator’s learned\nparameters are also accessible via public instance variables with an underscore\nsuffix (e.g., imputer.statistics_).\n• Nonproliferation of classes. Datasets are represented as NumPy arrays or SciPy\nsparse matrices, instead of homemade classes. Hyperparameters are just regular\nPython strings or numbers.\n• Composition. Existing building blocks are reused as much as possible. For\nexample, it is easy to create a Pipeline estimator from an arbitrary sequence of\ntransformers followed by a final estimator, as we will see.\n• Sensible defaults. Scikit-Learn provides reasonable default values for most\nparameters, making it easy to create a baseline working system quickly.\nHandling Text and Categorical Attributes\nEarlier we left out the categorical attribute ocean_proximity because it is a text\nattribute so we cannot compute its median:\n>>> housing_cat = housing[[\"ocean_proximity\"]]\n>>> housing_cat.head(10)\n      ocean_proximity\n17606       <1H OCEAN\n18632       <1H OCEAN\n14650      NEAR OCEAN\n3230           INLAND\n3555        <1H OCEAN\n19480          INLAND\n8879",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            95
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:107",
+        "strategy": "fixed",
+        "rank": 5,
+        "score": 0.39113789796829224,
+        "chunk_id": 107,
+        "text": "the best hyperparame‐\nter value that produces a model with the lowest generalization error, say just 5% error.\nSo you launch this model into production, but unfortunately it does not perform as\nwell as expected and produces 15% errors. What just happened?\nThe problem is that you measured the generalization error multiple times on the test\nset, and you adapted the model and hyperparameters to produce the best model for\nthat particular set. This means that the model is unlikely to perform as well on new\ndata.\nA common solution to this problem is called holdout validation: you simply hold out\npart of the training set to evaluate several candidate models and select the best one.\nThe new heldout set is called the validation set (or sometimes the development set, or\ndev set). More specifically, you train multiple models with various hyperparameters\non the reduced training set (i.e., the full training set minus the validation set), and\nyou select the model that performs best on the validation set. After this holdout vali‐\ndation process, you train the best model on the full training set (including the valida‐\ntion set), and this gives you the final model. Lastly, you evaluate this final model",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            58
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:619",
+        "strategy": "fixed",
+        "rank": 6,
+        "score": 0.38355883955955505,
+        "chunk_id": 619,
+        "text": "rate is arguably the most important hyperparameter. In general, the\noptimal learning rate is about half of the maximum learning rate (i.e., the learn‐\n320\n|\nChapter 10: Introduction to Artificial Neural Networks with Keras\n\n18 “Practical recommendations for gradient-based training of deep architectures,” Yoshua Bengio (2012).\ning rate above which the training algorithm diverges, as we saw in Chapter 4). So\na simple approach for tuning the learning rate is to start with a large value that\nmakes the training algorithm diverge, then divide this value by 3 and try again,\nand repeat until the training algorithm stops diverging. At that point, you gener‐\nally won’t be too far from the optimal learning rate. That said, it is sometimes\nuseful to reduce the learning rate during training: we will discuss this in Chap‐\nter 11.\n• Choosing a better optimizer than plain old Mini-batch Gradient Descent (and\ntuning its hyperparameters) is also quite important. We will discuss this in Chap‐\nter 11.\n• The batch size can also have a significant impact on your model’s performance\nand the training time. In general the optimal batch size will be lower than 32 (in\nApril 2018, Yann Lecun even tweeted \"Friends",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            346,
+            347
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:744",
+        "strategy": "fixed",
+        "rank": 7,
+        "score": 0.38198941946029663,
+        "chunk_id": 744,
+        "text": "Let’s walk through this code:\n• The constructor accepts **kwargs and passes them to the parent constructor,\nwhich handles standard hyperparameters: the name of the loss and the reduction\nalgorithm to use to aggregate the individual instance losses. By default, it is\n\"sum_over_batch_size\", which means that the loss will be the sum of the\ninstance losses, possibly weighted by the sample weights, if any, and then divide\nthe result by the batch size (not by the sum of weights, so this is not the weighted\nmean).5. Other possible values are \"sum\" and None.\n• The call() method takes the labels and predictions, computes all the instance\nlosses, and returns them.\n• The get_config() method returns a dictionary mapping each hyperparameter\nname to its value. It first calls the parent class’s get_config() method, then adds\nthe new hyperparameters to this dictionary (note that the convenient {**x} syn‐\ntax was added in Python 3.5).\nYou can then use any instance of this class when you compile the model:\nmodel.compile(loss=HuberLoss(2.), optimizer=\"nadam\")\nWhen you save the model, the threshold will be saved along with it, and when you\nload the model you just need to map the class name to the class",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            404
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:714",
+        "strategy": "fixed",
+        "rank": 8,
+        "score": 0.3818407654762268,
+        "chunk_id": 714,
+        "text": "means that the max norm constraint will apply independently to each neuron’s weight\nvector. If you want to use max-norm with convolutional layers (see Chapter 14),\nmake sure to set the max_norm() constraint’s axis argument appropriately (usually\naxis=[0, 1, 2]).\nSummary and Practical Guidelines\nIn this chapter, we have covered a wide range of techniques and you may be wonder‐\ning which ones you should use. The configuration in Table 11-2 will work fine in\nmost cases, without requiring much hyperparameter tuning.\nTable 11-2. Default DNN configuration\nHyperparameter\nDefault value\nKernel initializer:\nLeCun initialization\nActivation function:\nSELU\nNormalization:\nNone (self-normalization)\nRegularization:\nEarly stopping\nOptimizer:\nNadam\nLearning rate schedule: Performance scheduling\nDon’t forget to standardize the input features! Of course, you should also try to reuse\nparts of a pretrained neural network if you can find one that solves a similar problem,\nor use unsupervised pretraining if you have a lot of unlabeled data, or pretraining on\nan auxiliary task if you have a lot of labeled data for a similar task.\nThe default configuration in Table 11-2 may need to be tweaked:\nSummary and Practical",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            389
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:611",
+        "strategy": "fixed",
+        "rank": 9,
+        "score": 0.37527701258659363,
+        "chunk_id": 611,
+        "text": "Jaderberg et al. (2017).\nto be good, it should be explored more. This takes care of the “zooming” process for\nyou and leads to much better solutions in much less time. Here are a few Python\nlibraries you can use to optimize hyperparameters:\n• Hyperopt: a popular Python library for optimizing over all sorts of complex\nsearch spaces (including real values such as the learning rate, or discrete values\nsuch as the number of layers).\n• Hyperas, kopt or Talos: optimizing hyperparameters for Keras model (the first\ntwo are based on Hyperopt).\n• Scikit-Optimize (skopt): a general-purpose optimization library. The Bayes\nSearchCV class performs Bayesian optimization using an interface similar to Grid\nSearchCV.\n• Spearmint: a Bayesian optimization library.\n• Sklearn-Deap: a hyperparameter optimization library based on evolutionary\nalgorithms, also with a GridSearchCV-like interface.\n• And many more!\nMoreover, many companies offer services for hyperparameter optimization. For\nexample Google Cloud ML Engine has a hyperparameter tuning service. Other com‐\npanies provide APIs for hyperparameter optimization, such as Arimo, SigOpt, Oscar\nand many more.\nHyperparameter tuning is still an active area of",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            344
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:440",
+        "strategy": "fixed",
+        "rank": 10,
+        "score": 0.37373942136764526,
+        "chunk_id": 440,
+        "text": "kernels\nSelecting a Kernel and Tuning Hyperparameters\nAs kPCA is an unsupervised learning algorithm, there is no obvious performance\nmeasure to help you select the best kernel and hyperparameter values. However,\ndimensionality reduction is often a preparation step for a supervised learning task\n(e.g., classification), so you can simply use grid search to select the kernel and hyper‐\nparameters that lead to the best performance on that task. For example, the following\ncode creates a two-step pipeline, first reducing dimensionality to two dimensions\nusing kPCA, then applying Logistic Regression for classification. Then it uses Grid\nSearchCV to find the best kernel and gamma value for kPCA in order to get the best\nclassification accuracy at the end of the pipeline:\nfrom sklearn.model_selection import GridSearchCV\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.pipeline import Pipeline\nKernel PCA\n|\n229\n\nclf = Pipeline([\n        (\"kpca\", KernelPCA(n_components=2)),\n        (\"log_reg\", LogisticRegression())\n    ])\nparam_grid = [{\n        \"kpca__gamma\": np.linspace(0.03, 0.05, 10),\n        \"kpca__kernel\": [\"rbf\", \"sigmoid\"]\n    }]\ngrid_search = GridSearchCV(clf, param_grid,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            255,
+            256
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:690",
+        "strategy": "fixed",
+        "rank": 11,
+        "score": 0.3661731481552124,
+        "chunk_id": 690,
+        "text": "constant learning rate. There are many dif‐\nferent strategies to reduce the learning rate during training. These strategies are called\nlearning schedules (we briefly introduced this concept in Chapter 4), the most com‐\nmon of which are:\nPower scheduling\nSet the learning rate to a function of the iteration number t: η(t) = η0 / (1 + t/k)c.\nThe initial learning rate η0, the power c (typically set to 1) and the steps s are\nhyperparameters. The learning rate drops at each step, and after s steps it is down\nto η0 / 2. After s more steps, it is down to η0 / 3. Then down to η0 / 4, then η0 / 5,\nand so on. As you can see, this schedule first drops quickly, then more and more\nslowly. Of course, this requires tuning η0, s (and possibly c).\nExponential scheduling\nSet the learning rate to: η(t) = η0 0.1t/s. The learning rate will gradually drop by a\nfactor of 10 every s steps. While power scheduling reduces the learning rate more\nand more slowly, exponential scheduling keeps slashing it by a factor of 10 every\ns steps.\nPiecewise constant scheduling\nUse a constant learning rate for a number of epochs (e.g., η0 = 0.1 for 5 epochs),\nthen a smaller learning rate for another number of epochs (e.g.,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            379
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:167",
+        "strategy": "fixed",
+        "rank": 12,
+        "score": 0.36235880851745605,
+        "chunk_id": 167,
+        "text": "interface:\n— Estimators. Any object that can estimate some parameters based on a dataset\nis called an estimator (e.g., an imputer is an estimator). The estimation itself is\nperformed by the fit() method, and it takes only a dataset as a parameter (or\ntwo for supervised learning algorithms; the second dataset contains the\nlabels). Any other parameter needed to guide the estimation process is con‐\nsidered a hyperparameter (such as an imputer’s strategy), and it must be set\nas an instance variable (generally via a constructor parameter).\n— Transformers. Some estimators (such as an imputer) can also transform a\ndataset; these are called transformers. Once again, the API is quite simple: the\ntransformation is performed by the transform() method with the dataset to\ntransform as a parameter. It returns the transformed dataset. This transforma‐\ntion generally relies on the learned parameters, as is the case for an imputer.\nAll transformers also have a convenience method called fit_transform()\nthat is equivalent to calling fit() and then transform() (but sometimes\nfit_transform() is optimized and runs much faster).\n— Predictors. Finally, some estimators are capable of making predictions given",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            94
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:106",
+        "strategy": "fixed",
+        "rank": 13,
+        "score": 0.3621445298194885,
+        "chunk_id": 106,
+        "text": "overfitting the train‐\ning data.\nIt is common to use 80% of the data for training and hold out 20%\nfor testing. However, this depends on the size of the dataset: if it\ncontains 10 million instances, then holding out 1% means your test\nset will contain 100,000 instances: that’s probably more than\nenough to get a good estimate of the generalization error.\nTesting and Validating\n|\n31\n\nHyperparameter Tuning and Model Selection\nSo evaluating a model is simple enough: just use a test set. Now suppose you are hesi‐\ntating between two models (say a linear model and a polynomial model): how can\nyou decide? One option is to train both and compare how well they generalize using\nthe test set.\nNow suppose that the linear model generalizes better, but you want to apply some\nregularization to avoid overfitting. The question is: how do you choose the value of\nthe regularization hyperparameter? One option is to train 100 different models using\n100 different values for this hyperparameter. Suppose you find the best hyperparame‐\nter value that produces a model with the lowest generalization error, say just 5% error.\nSo you launch this model into production, but unfortunately it does not perform as\nwell",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            57,
+            58
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:656",
+        "strategy": "fixed",
+        "rank": 14,
+        "score": 0.3506557047367096,
+        "chunk_id": 656,
+        "text": "computed over\nthe current batch), the running average � is updated using the following equation:\nv\nv × momentum + v × 1 −momentum\nA good momentum value is typically close to 1—for example, 0.9, 0.99, or 0.999 (you\nwant more 9s for larger datasets and smaller mini-batches).\nAnother important hyperparameter is axis: it determines which axis should be nor‐\nmalized. It defaults to –1, meaning that by default it will normalize the last axis (using\nthe means and standard deviations computed across the other axes). For example,\nwhen the input batch is 2D (i.e., the batch shape is [batch size, features]), this means\nthat each input feature will be normalized based on the mean and standard deviation\ncomputed across all the instances in the batch. For example, the first BN layer in the\nprevious code example will independently normalize (and rescale and shift) each of\nthe 784 input features. However, if we move the first BN layer before the Flatten\nVanishing/Exploding Gradients Problems\n|\n337\n\n10 “Fixup Initialization: Residual Learning Without Normalization,” Hongyi Zhang, Yann N. Dauphin, Tengyu\nMa (2019).\n11 “On the difficulty of training recurrent neural networks,” R. Pascanu et al. (2013).\nlayer,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            363,
+            364
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:207",
+        "strategy": "fixed",
+        "rank": 15,
+        "score": 0.3496289849281311,
+        "chunk_id": 207,
+        "text": "that you are interested in, and try to go through the whole process from A to\nZ. A good place to start is on a competition website such as http://kaggle.com/: you\nwill have a dataset to play with, a clear goal, and people to share the experience with.\nExercises\nUsing this chapter’s housing dataset:\n1. Try a Support Vector Machine regressor (sklearn.svm.SVR), with various hyper‐\nparameters such as kernel=\"linear\" (with various values for the C hyperpara‐\nmeter) or kernel=\"rbf\" (with various values for the C and gamma\nhyperparameters). Don’t worry about what these hyperparameters mean for now.\nHow does the best SVR predictor perform?\n2. Try replacing GridSearchCV with RandomizedSearchCV.\n3. Try adding a transformer in the preparation pipeline to select only the most\nimportant attributes.\n4. Try creating a single pipeline that does the full data preparation plus the final\nprediction.\n5. Automatically explore some preparation options using GridSearchCV.\nSolutions to these exercises are available in the online Jupyter notebooks at https://\ngithub.com/ageron/handson-ml2.\nTry It Out!\n|\n85\n\n1 By default Scikit-Learn caches downloaded datasets in a directory called $HOME/scikit_learn_data.\nCHAPTER",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            111,
+            113
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:759",
+        "strategy": "fixed",
+        "rank": 16,
+        "score": 0.3434382379055023,
+        "chunk_id": 759,
+        "text": "Let’s walk through this code:\n• The constructor takes all the hyperparameters as arguments (in this example just\nunits and activation), and importantly it also takes a **kwargs argument. It\ncalls the parent constructor, passing it the kwargs: this takes care of standard\narguments such as input_shape, trainable, name, and so on. Then it saves the\nhyperparameters as attributes, converting the activation argument to the\nappropriate activation function using the keras.activations.get() function (it\naccepts functions, standard strings like \"relu\" or \"selu\", or simply None)8.\n• The build() method’s role is to create the layer’s variables, by calling the\nadd_weight() method for each weight. The build() method is called the first\ntime the layer is used. At that point, Keras will know the shape of this layer’s\ninputs, and it will pass it to the build() method9, which is often necessary to cre‐\nate some of the weights. For example, we need to know the number of neurons in\nthe previous layer in order to create the connection weights matrix (i.e., the \"ker\nnel\"): this corresponds to the size of the last dimension of the inputs. At the end\nof the build() method (and only at the end), you must call",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            410
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:114",
+        "strategy": "fixed",
+        "rank": 17,
+        "score": 0.3352597653865814,
+        "chunk_id": 114,
+        "text": "in Machine Learning?\n15. If your model performs great on the training data but generalizes poorly to new\ninstances, what is happening? Can you name three possible solutions?\n16. What is a test set and why would you want to use it?\n34\n|\nChapter 1: The Machine Learning Landscape\n\n17. What is the purpose of a validation set?\n18. What can go wrong if you tune hyperparameters using the test set?\n19. What is repeated cross-validation and why would you prefer it to using a single\nvalidation set?\nSolutions to these exercises are available in ???.\nExercises\n|\n35\n\n1 The example project is completely fictitious; the goal is just to illustrate the main steps of a Machine Learning\nproject, not to learn anything about the real estate business.\nCHAPTER 2\nEnd-to-End Machine Learning Project\nWith Early Release ebooks, you get books in their earliest form—\nthe author’s raw and unedited content as he or she writes—so you\ncan take advantage of these technologies long before the official\nrelease of these titles. The following will be Chapter 2 in the final\nrelease of the book.\nIn this chapter, you will go through an example project end to end, pretending to be a\nrecently hired data scientist in a real estate",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            60,
+            61,
+            63
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:292",
+        "strategy": "fixed",
+        "rank": 18,
+        "score": 0.33049145340919495,
+        "chunk_id": 292,
+        "text": "the model’s performance using the unregularized performance measure.\nIt is quite common for the cost function used during training to be\ndifferent from the performance measure used for testing. Apart\nfrom regularization, another reason why they might be different is\nthat a good training cost function should have optimization-\nfriendly derivatives, while the performance measure used for test‐\ning should be as close as possible to the final objective. A good\nexample of this is a classifier trained using a cost function such as\nthe log loss (discussed in a moment) but evaluated using precision/\nrecall.\nThe hyperparameter α controls how much you want to regularize the model. If α = 0\nthen Ridge Regression is just Linear Regression. If α is very large, then all weights end\nup very close to zero and the result is a flat line going through the data’s mean. Equa‐\ntion 4-8 presents the Ridge Regression cost function.11\nEquation 4-8. Ridge Regression cost function\nJ θ = MSE θ + α1\n2 ∑i = 1\nn\nθi\n2\nNote that the bias term θ0 is not regularized (the sum starts at i = 1, not 0). If we\ndefine w as the vector of feature weights (θ1 to θn), then the regularization term is\nsimply equal to ½(∥ w ∥2)2,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            163
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:199",
+        "strategy": "fixed",
+        "rank": 19,
+        "score": 0.32893165946006775,
+        "chunk_id": 199,
+        "text": "computing budget you want to allocate to hyper‐\nparameter search, simply by setting the number of iterations.\nEnsemble Methods\nAnother way to fine-tune your system is to try to combine the models that perform\nbest. The group (or “ensemble”) will often perform better than the best individual\nmodel (just like Random Forests perform better than the individual Decision Trees\nthey rely on), especially if the individual models make very different types of errors.\nWe will cover this topic in more detail in Chapter 7.\nAnalyze the Best Models and Their Errors\nYou will often gain good insights on the problem by inspecting the best models. For\nexample, the RandomForestRegressor can indicate the relative importance of each\nattribute for making accurate predictions:\n>>> feature_importances = grid_search.best_estimator_.feature_importances_\n>>> feature_importances\narray([7.33442355e-02, 6.29090705e-02, 4.11437985e-02, 1.46726854e-02,\n       1.41064835e-02, 1.48742809e-02, 1.42575993e-02, 3.66158981e-01,\n       5.64191792e-02, 1.08792957e-01, 5.33510773e-02, 1.03114883e-02,\n       1.64780994e-01, 6.02803867e-05, 1.96041560e-03, 2.85647464e-03])\nLet’s display these importance scores next to their corresponding",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            108
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:19",
+        "strategy": "fixed",
+        "rank": 20,
+        "score": 0.3277197480201721,
+        "chunk_id": 19,
+        "text": "225\nChoosing the Right Number of Dimensions                                                       225\nPCA for Compression                                                                                             226\nvi\n|\nTable of Contents\n\nRandomized PCA                                                                                                    227\nIncremental PCA                                                                                                     227\nKernel PCA                                                                                                                   228\nSelecting a Kernel and Tuning Hyperparameters                                                229\nLLE                                                                                                                                 232\nOther Dimensionality Reduction Techniques                                                         234\nExercises                                                                                                                        235\n9. Unsupervised Learning Techniques. . . . . . . . . . . . . . . . . . . . . . . . .",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            8,
+            9
+          ]
+        }
+      }
+    ]
+  },
+  "q5": {
+    "query": "What is overfitting?",
+    "results": [
+      {
+        "candidate_id": "fixed:100",
+        "strategy": "fixed",
+        "rank": 1,
+        "score": 0.6132428646087646,
+        "chunk_id": 100,
+        "text": "a pattern is real or simply the result of noise in the data.\nOverfitting happens when the model is too complex relative to the\namount and noisiness of the training data. The possible solutions\nare:\n• To simplify the model by selecting one with fewer parameters\n(e.g., a linear model rather than a high-degree polynomial\nmodel), by reducing the number of attributes in the training\ndata or by constraining the model\n• To gather more training data\n• To reduce the noise in the training data (e.g., fix data errors\nand remove outliers)\nConstraining a model to make it simpler and reduce the risk of overfitting is called\nregularization. For example, the linear model we defined earlier has two parameters,\nθ0 and θ1. This gives the learning algorithm two degrees of freedom to adapt the model\nto the training data: it can tweak both the height (θ0) and the slope (θ1) of the line. If\nwe forced θ1 = 0, the algorithm would have only one degree of freedom and would\nhave a much harder time fitting the data properly: all it could do is move the line up\nor down to get as close as possible to the training instances, so it would end up\naround the mean. A very simple model indeed! If we allow the algorithm",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            55
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:98",
+        "strategy": "fixed",
+        "rank": 2,
+        "score": 0.558732807636261,
+        "chunk_id": 98,
+        "text": "on among existing\nfeatures.\n• Feature extraction: combining existing features to produce a more useful one (as\nwe saw earlier, dimensionality reduction algorithms can help).\n• Creating new features by gathering new data.\nNow that we have looked at many examples of bad data, let’s look at a couple of exam‐\nples of bad algorithms.\nOverfitting the Training Data\nSay you are visiting a foreign country and the taxi driver rips you off. You might be\ntempted to say that all taxi drivers in that country are thieves. Overgeneralizing is\nsomething that we humans do all too often, and unfortunately machines can fall into\nthe same trap if we are not careful. In Machine Learning this is called overfitting: it\nmeans that the model performs well on the training data, but it does not generalize\nwell.\nFigure 1-22 shows an example of a high-degree polynomial life satisfaction model\nthat strongly overfits the training data. Even though it performs much better on the\ntraining data than the simple linear model, would you really trust its predictions?\nFigure 1-22. Overfitting the training data\nComplex models such as deep neural networks can detect subtle patterns in the data,\nbut if the training set is noisy,",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            54
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:289",
+        "strategy": "fixed",
+        "rank": 3,
+        "score": 0.49611181020736694,
+        "chunk_id": 289,
+        "text": "model.\n• There is a gap between the curves. This means that the model performs signifi‐\ncantly better on the training data than on the validation data, which is the hall‐\nmark of an overfitting model. However, if you used a much larger training set,\nthe two curves would continue to get closer.\nFigure 4-16. Learning curves for the polynomial model\nLearning Curves\n|\n135\n\n10 This notion of bias is not to be confused with the bias term of linear models.\nOne way to improve an overfitting model is to feed it more training\ndata until the validation error reaches the training error.\nThe Bias/Variance Tradeoff\nAn important theoretical result of statistics and Machine Learning is the fact that a\nmodel’s generalization error can be expressed as the sum of three very different\nerrors:\nBias\nThis part of the generalization error is due to wrong assumptions, such as assum‐\ning that the data is linear when it is actually quadratic. A high-bias model is most\nlikely to underfit the training data.10\nVariance\nThis part is due to the model’s excessive sensitivity to small variations in the\ntraining data. A model with many degrees of freedom (such as a high-degree pol‐\nynomial model) is likely to have high",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            161,
+            162
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:102",
+        "strategy": "fixed",
+        "rank": 4,
+        "score": 0.48178035020828247,
+        "chunk_id": 102,
+        "text": "a bit less the training data that the\nmodel was trained on, but actually allows it to generalize better to new examples.\nMain Challenges of Machine Learning\n|\n29\n\nFigure 1-23. Regularization reduces the risk of overfitting\nThe amount of regularization to apply during learning can be controlled by a hyper‐\nparameter. A hyperparameter is a parameter of a learning algorithm (not of the\nmodel). As such, it is not affected by the learning algorithm itself; it must be set prior\nto training and remains constant during training. If you set the regularization hyper‐\nparameter to a very large value, you will get an almost flat model (a slope close to\nzero); the learning algorithm will almost certainly not overfit the training data, but it\nwill be less likely to find a good solution. Tuning hyperparameters is an important\npart of building a Machine Learning system (you will see a detailed example in the\nnext chapter).\nUnderfitting the Training Data\nAs you might guess, underfitting is the opposite of overfitting: it occurs when your\nmodel is too simple to learn the underlying structure of the data. For example, a lin‐\near model of life satisfaction is prone to underfit; reality is just more complex",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            55,
+            56
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:285",
+        "strategy": "fixed",
+        "rank": 5,
+        "score": 0.46791017055511475,
+        "chunk_id": 285,
+        "text": "linear model is underfitting it. The model that will generalize\nbest in this case is the quadratic model. It makes sense since the data was generated\nusing a quadratic model, but in general you won’t know what function generated the\ndata, so how can you decide how complex your model should be? How can you tell\nthat your model is overfitting or underfitting the data?\nIn Chapter 2 you used cross-validation to get an estimate of a model’s generalization\nperformance. If a model performs well on the training data but generalizes poorly\naccording to the cross-validation metrics, then your model is overfitting. If it per‐\nforms poorly on both, then it is underfitting. This is one way to tell when a model is\ntoo simple or too complex.\nAnother way is to look at the learning curves: these are plots of the model’s perfor‐\nmance on the training set and the validation set as a function of the training set size\n(or the training iteration). To generate the plots, simply train the model several times\non different sized subsets of the training set. The following code defines a function\nthat plots the learning curves of a model given some training data:\nfrom sklearn.metrics import mean_squared_error\nfrom",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            159
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:103",
+        "strategy": "fixed",
+        "rank": 6,
+        "score": 0.4666558504104614,
+        "chunk_id": 103,
+        "text": "it occurs when your\nmodel is too simple to learn the underlying structure of the data. For example, a lin‐\near model of life satisfaction is prone to underfit; reality is just more complex than\nthe model, so its predictions are bound to be inaccurate, even on the training exam‐\nples.\nThe main options to fix this problem are:\n• Selecting a more powerful model, with more parameters\n• Feeding better features to the learning algorithm (feature engineering)\n• Reducing the constraints on the model (e.g., reducing the regularization hyper‐\nparameter)\nStepping Back\nBy now you already know a lot about Machine Learning. However, we went through\nso many concepts that you may be feeling a little lost, so let’s step back and look at the\nbig picture:\n30\n|\nChapter 1: The Machine Learning Landscape\n\n• Machine Learning is about making machines get better at some task by learning\nfrom data, instead of having to explicitly code rules.\n• There are many different types of ML systems: supervised or not, batch or online,\ninstance-based or model-based, and so on.\n• In a ML project you gather data in a training set, and you feed the training set to\na learning algorithm. If the algorithm is model-based it tunes",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            56,
+            57
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:99",
+        "strategy": "fixed",
+        "rank": 7,
+        "score": 0.44589221477508545,
+        "chunk_id": 99,
+        "text": "would you really trust its predictions?\nFigure 1-22. Overfitting the training data\nComplex models such as deep neural networks can detect subtle patterns in the data,\nbut if the training set is noisy, or if it is too small (which introduces sampling noise),\nthen the model is likely to detect patterns in the noise itself. Obviously these patterns\nwill not generalize to new instances. For example, say you feed your life satisfaction\nmodel many more attributes, including uninformative ones such as the country’s\nname. In that case, a complex model may detect patterns like the fact that all coun‐\ntries in the training data with a w in their name have a life satisfaction greater than 7:\nNew Zealand (7.3), Norway (7.4), Sweden (7.2), and Switzerland (7.5). How confident\n28\n|\nChapter 1: The Machine Learning Landscape\n\nare you that the W-satisfaction rule generalizes to Rwanda or Zimbabwe? Obviously\nthis pattern occurred in the training data by pure chance, but the model has no way\nto tell whether a pattern is real or simply the result of noise in the data.\nOverfitting happens when the model is too complex relative to the\namount and noisiness of the training data. The possible solutions\nare:\n•",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            54,
+            55
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:290",
+        "strategy": "fixed",
+        "rank": 8,
+        "score": 0.44047409296035767,
+        "chunk_id": 290,
+        "text": "This part is due to the model’s excessive sensitivity to small variations in the\ntraining data. A model with many degrees of freedom (such as a high-degree pol‐\nynomial model) is likely to have high variance, and thus to overfit the training\ndata.\nIrreducible error\nThis part is due to the noisiness of the data itself. The only way to reduce this\npart of the error is to clean up the data (e.g., fix the data sources, such as broken\nsensors, or detect and remove outliers).\nIncreasing a model’s complexity will typically increase its variance and reduce its bias.\nConversely, reducing a model’s complexity increases its bias and reduces its variance.\nThis is why it is called a tradeoff.\nRegularized Linear Models\nAs we saw in Chapters 1 and 2, a good way to reduce overfitting is to regularize the\nmodel (i.e., to constrain it): the fewer degrees of freedom it has, the harder it will be\nfor it to overfit the data. For example, a simple way to regularize a polynomial model\nis to reduce the number of polynomial degrees.\nFor a linear model, regularization is typically achieved by constraining the weights of\nthe model. We will now look at Ridge Regression, Lasso Regression, and Elastic Net,\nwhich",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            162
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:368",
+        "strategy": "fixed",
+        "rank": 9,
+        "score": 0.4403126537799835,
+        "chunk_id": 368,
+        "text": "is not determined prior to training, so the model structure is\nfree to stick closely to the data. In contrast, a parametric model such as a linear model\nhas a predetermined number of parameters, so its degree of freedom is limited,\nreducing the risk of overfitting (but increasing the risk of underfitting).\nTo avoid overfitting the training data, you need to restrict the Decision Tree’s freedom\nduring training. As you know by now, this is called regularization. The regularization\nhyperparameters depend on the algorithm used, but generally you can at least restrict\nthe maximum depth of the Decision Tree. In Scikit-Learn, this is controlled by the\nmax_depth hyperparameter (the default value is None, which means unlimited).\nReducing max_depth will regularize the model and thus reduce the risk of overfitting.\nThe DecisionTreeClassifier class has a few other parameters that similarly restrict\nthe shape of the Decision Tree: min_samples_split (the minimum number of sam‐\nples a node must have before it can be split), min_samples_leaf (the minimum num‐\nber of samples a leaf node must have), min_weight_fraction_leaf (same as\nmin_samples_leaf but expressed as a fraction of the total number of",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            210
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:191",
+        "strategy": "fixed",
+        "rank": 10,
+        "score": 0.40651676058769226,
+        "chunk_id": 191,
+        "text": "Scores: [49519.80364233 47461.9115823  50029.02762854 52325.28068953\n 49308.39426421 53446.37892622 48634.8036574  47585.73832311\n 53490.10699751 50021.5852922 ]\nMean: 50182.303100336096\nStandard deviation: 2097.0810550985693\nWow, this is much better: Random Forests look very promising. However, note that\nthe score on the training set is still much lower than on the validation sets, meaning\nthat the model is still overfitting the training set. Possible solutions for overfitting are\nto simplify the model, constrain it (i.e., regularize it), or get a lot more training data.\nHowever, before you dive much deeper in Random Forests, you should try out many\nother models from various categories of Machine Learning algorithms (several Sup‐\nport Vector Machines with different kernels, possibly a neural network, etc.), without\nspending too much time tweaking the hyperparameters. The goal is to shortlist a few\n(two to five) promising models.\n78\n|\nChapter 2: End-to-End Machine Learning Project\n\nYou should save every model you experiment with, so you can\ncome back easily to any model you want. Make sure you save both\nthe hyperparameters and the trained parameters, as well as the\ncross-validation",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            104,
+            105
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:190",
+        "strategy": "fixed",
+        "rank": 11,
+        "score": 0.4034275412559509,
+        "chunk_id": 190,
+        "text": "|\n77\n\nScores: [66782.73843989 66960.118071   70347.95244419 74739.57052552\n 68031.13388938 71193.84183426 64969.63056405 68281.61137997\n 71552.91566558 67665.10082067]\nMean: 69052.46136345083\nStandard deviation: 2731.674001798348\nThat’s right: the Decision Tree model is overfitting so badly that it performs worse\nthan the Linear Regression model.\nLet’s try one last model now: the RandomForestRegressor. As we will see in Chap‐\nter 7, Random Forests work by training many Decision Trees on random subsets of\nthe features, then averaging out their predictions. Building a model on top of many\nother models is called Ensemble Learning, and it is often a great way to push ML algo‐\nrithms even further. We will skip most of the code since it is essentially the same as\nfor the other models:\n>>> from sklearn.ensemble import RandomForestRegressor\n>>> forest_reg = RandomForestRegressor()\n>>> forest_reg.fit(housing_prepared, housing_labels)\n>>> [...]\n>>> forest_rmse\n18603.515021376355\n>>> display_scores(forest_rmse_scores)\nScores: [49519.80364233 47461.9115823  50029.02762854 52325.28068953\n 49308.39426421 53446.37892622 48634.8036574  47585.73832311\n 53490.10699751 50021.5852922 ]\nMean: 50182.303100336096\nStandard",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            103,
+            104
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:897",
+        "strategy": "fixed",
+        "rank": 12,
+        "score": 0.3969327509403229,
+        "chunk_id": 897,
+        "text": "–\n–\nSoftmax\nF9\nFully Connected\n–\n4,096\n–\n–\n–\nReLU\nF8\nFully Connected\n–\n4,096\n–\n–\n–\nReLU\nC7\nConvolution\n256\n13 × 13\n3 × 3\n1\nSAME\nReLU\nC6\nConvolution\n384\n13 × 13\n3 × 3\n1\nSAME\nReLU\nC5\nConvolution\n384\n13 × 13\n3 × 3\n1\nSAME\nReLU\nS4\nMax Pooling\n256\n13 × 13\n3 × 3\n2\nVALID\n–\nC3\nConvolution\n256\n27 × 27\n5 × 5\n1\nSAME\nReLU\nS2\nMax Pooling\n96\n27 × 27\n3 × 3\n2\nVALID\n–\nC1\nConvolution\n96\n55 × 55\n11 × 11\n4\nVALID\nReLU\nIn\nInput\n3 (RGB)\n227 × 227 –\n–\n–\n–\nTo reduce overfitting, the authors used two regularization techniques: first they\napplied dropout (introduced in Chapter 11) with a 50% dropout rate during training\nto the outputs of layers F8 and F9. Second, they performed data augmentation by ran‐\ndomly shifting the training images by various offsets, flipping them horizontally, and\nchanging the lighting conditions.\nData Augmentation\nData augmentation artificially increases the size of the training set by generating\nmany realistic variants of each training instance. This reduces overfitting, making this\na regularization technique. The generated instances should be as realistic as possible:\n450\n|\nChapter 14: Deep Computer Vision Using Convolutional Neural Networks\n\nideally, given an image from the augmented",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            476,
+            477
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:300",
+        "strategy": "fixed",
+        "rank": 13,
+        "score": 0.3956981301307678,
+        "chunk_id": 300,
+        "text": "of\ntraining instances or when several features are strongly correlated.\nHere is a short example using Scikit-Learn’s ElasticNet (l1_ratio corresponds to\nthe mix ratio r):\n>>> from sklearn.linear_model import ElasticNet\n>>> elastic_net = ElasticNet(alpha=0.1, l1_ratio=0.5)\n>>> elastic_net.fit(X, y)\n>>> elastic_net.predict([[1.5]])\narray([1.54333232])\nEarly Stopping\nA very different way to regularize iterative learning algorithms such as Gradient\nDescent is to stop training as soon as the validation error reaches a minimum. This is\ncalled early stopping. Figure 4-20 shows a complex model (in this case a high-degree\nPolynomial Regression model) being trained using Batch Gradient Descent. As the\nepochs go by, the algorithm learns and its prediction error (RMSE) on the training set\nnaturally goes down, and so does its prediction error on the validation set. However,\n142\n|\nChapter 4: Training Models\n\nafter a while the validation error stops decreasing and actually starts to go back up.\nThis indicates that the model has started to overfit the training data. With early stop‐\nping you just stop training as soon as the validation error reaches the minimum. It is\nsuch a simple and efficient regularization",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            168,
+            169
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:705",
+        "strategy": "fixed",
+        "rank": 14,
+        "score": 0.393110990524292,
+        "chunk_id": 705,
+        "text": "the\ntraining set and yet have similar training and validation losses. So\nmake sure to evaluate the training loss without dropout (e.g., after\ntraining). Alternatively, you can call the fit() method inside a\nwith keras.backend.learning_phase_scope(1) block: this will\nforce dropout to be active during both training and validation.25\nIf you observe that the model is overfitting, you can increase the dropout rate. Con‐\nversely, you should try decreasing the dropout rate if the model underfits the training\nset. It can also help to increase the dropout rate for large layers, and reduce it for\nsmall ones. Moreover, many state-of-the-art architectures only use dropout after the\nlast hidden layer, so you may want to try this if full dropout is too strong.\nDropout does tend to significantly slow down convergence, but it usually results in a\nmuch better model when tuned properly. So, it is generally well worth the extra time\nand effort.\nAvoiding Overfitting Through Regularization\n|\n359\n\n26 “Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning,” Y. Gal and Z.\nGhahramani (2016).\n27 Specifically, they show that training a dropout network is mathematically equivalent",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            385,
+            386
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:106",
+        "strategy": "fixed",
+        "rank": 15,
+        "score": 0.38613465428352356,
+        "chunk_id": 106,
+        "text": "overfitting the train‐\ning data.\nIt is common to use 80% of the data for training and hold out 20%\nfor testing. However, this depends on the size of the dataset: if it\ncontains 10 million instances, then holding out 1% means your test\nset will contain 100,000 instances: that’s probably more than\nenough to get a good estimate of the generalization error.\nTesting and Validating\n|\n31\n\nHyperparameter Tuning and Model Selection\nSo evaluating a model is simple enough: just use a test set. Now suppose you are hesi‐\ntating between two models (say a linear model and a polynomial model): how can\nyou decide? One option is to train both and compare how well they generalize using\nthe test set.\nNow suppose that the linear model generalizes better, but you want to apply some\nregularization to avoid overfitting. The question is: how do you choose the value of\nthe regularization hyperparameter? One option is to train 100 different models using\n100 different values for this hyperparameter. Suppose you find the best hyperparame‐\nter value that produces a model with the lowest generalization error, say just 5% error.\nSo you launch this model into production, but unfortunately it does not perform as\nwell",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            57,
+            58
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:906",
+        "strategy": "fixed",
+        "rank": 16,
+        "score": 0.3779642879962921,
+        "chunk_id": 906,
+        "text": "at that point. Indeed, GoogLeNet input images\nare typically expected to be 224 × 224 pixels, so after 5 max pooling layers, each\ndividing the height and width by 2, the feature maps are down to 7 × 7. More‐\nover, it is a classification task, not localization, so it does not matter where the\nobject is. Thanks to the dimensionality reduction brought by this layer, there is\nno need to have several fully connected layers at the top of the CNN (like in\nAlexNet), and this considerably reduces the number of parameters in the net‐\nwork and limits the risk of overfitting.\n• The last layers are self-explanatory: dropout for regularization, then a fully con‐\nnected layer with 1,000 units, since there are a 1,000 classes, and a softmax acti‐\nvation function to output estimated class probabilities.\nThis diagram is slightly simplified: the original GoogLeNet architecture also included\ntwo auxiliary classifiers plugged on top of the third and sixth inception modules.\nThey were both composed of one average pooling layer, one convolutional layer, two\nfully connected layers, and a softmax activation layer. During training, their loss\n(scaled down by 70%) was added to the overall loss. The goal was to",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            482
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:372",
+        "strategy": "fixed",
+        "rank": 17,
+        "score": 0.3745414614677429,
+        "chunk_id": 372,
+        "text": "value.\n186\n|\nChapter 6: Decision Trees\n\nFigure 6-5. Predictions of two Decision Tree regression models\nThe CART algorithm works mostly the same way as earlier, except that instead of try‐\ning to split the training set in a way that minimizes impurity, it now tries to split the\ntraining set in a way that minimizes the MSE. Equation 6-4 shows the cost function\nthat the algorithm tries to minimize.\nEquation 6-4. CART cost function for regression\nJ k, tk =\nmleft\nm MSEleft +\nmright\nm\nMSEright\nwhere\nMSEnode =\n∑\ni ∈node\nynode −y i 2\nynode =\n1\nmnode\n∑\ni ∈node\ny i\nJust like for classification tasks, Decision Trees are prone to overfitting when dealing\nwith regression tasks. Without any regularization (i.e., using the default hyperpara‐\nmeters), you get the predictions on the left of Figure 6-6. It is obviously overfitting\nthe training set very badly. Just setting min_samples_leaf=10 results in a much more\nreasonable model, represented on the right of Figure 6-6.\nFigure 6-6. Regularizing a Decision Tree regressor\nRegression\n|\n187\n\n6 It randomly selects the set of features to evaluate at each node.\nInstability\nHopefully by now you are convinced that Decision Trees have a lot going for them:\nthey",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            212,
+            213,
+            214
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:3",
+        "strategy": "fixed",
+        "rank": 18,
+        "score": 0.3719336986541748,
+        "chunk_id": 3,
+        "text": "Model-Based Learning                                                      18\nMain Challenges of Machine Learning                                                                       24\nInsufficient Quantity of Training Data                                                                   24\nNonrepresentative Training Data                                                                            26\nPoor-Quality Data                                                                                                      27\nIrrelevant Features                                                                                                     27\nOverfitting the Training Data                                                                                   28\nUnderfitting the Training Data                                                                                30\nStepping Back                                                                                                             30\nTesting and Validating                                                                                                   31\nHyperparameter Tuning and Model Selection",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            5
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:893",
+        "strategy": "fixed",
+        "rank": 19,
+        "score": 0.36687320470809937,
+        "chunk_id": 893,
+        "text": "instance. We also add two dropout layers,\nwith a dropout rate of 50% each, to reduce overfitting.\nThis CNN reaches over 92% accuracy on the test set. It’s not the state of the art, but it\nis pretty good, and clearly much better than what we achieved with dense networks in\nChapter 10.\nOver the years, variants of this fundamental architecture have been developed, lead‐\ning to amazing advances in the field. A good measure of this progress is the error rate\nin competitions such as the ILSVRC ImageNet challenge. In this competition the\ntop-5 error rate for image classification fell from over 26% to less than 2.3% in just six\nyears. The top-five error rate is the number of test images for which the system’s top 5\npredictions did not include the correct answer. The images are large (256 pixels high)\nand there are 1,000 classes, some of which are really subtle (try distinguishing 120\ndog breeds). Looking at the evolution of the winning entries is a good way to under‐\nstand how CNNs work.\nWe will first look at the classical LeNet-5 architecture (1998), then three of the win‐\nners of the ILSVRC challenge: AlexNet (2012), GoogLeNet (2014), and ResNet\n(2015).\n448\n|\nChapter 14: Deep Computer Vision",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            474
+          ]
+        }
+      },
+      {
+        "candidate_id": "fixed:255",
+        "strategy": "fixed",
+        "rank": 20,
+        "score": 0.35989993810653687,
+        "chunk_id": 255,
+        "text": "when we study neural networks in Part II: Batch GD, Mini-batch GD,\nand Stochastic GD.\nNext we will look at Polynomial Regression, a more complex model that can fit non‐\nlinear datasets. Since this model has more parameters than Linear Regression, it is\nmore prone to overfitting the training data, so we will look at how to detect whether\nor not this is the case, using learning curves, and then we will look at several regulari‐\nzation techniques that can reduce the risk of overfitting the training set.\nFinally, we will look at two more models that are commonly used for classification\ntasks: Logistic Regression and Softmax Regression.\nThere will be quite a few math equations in this chapter, using basic\nnotions of linear algebra and calculus. To understand these equa‐\ntions, you will need to know what vectors and matrices are, how to\ntranspose them, multiply them, and inverse them, and what partial\nderivatives are. If you are unfamiliar with these concepts, please go\nthrough the linear algebra and calculus introductory tutorials avail‐\nable as Jupyter notebooks in the online supplemental material. For\nthose who are truly allergic to mathematics, you should still go\nthrough this chapter",
+        "metadata": {
+          "source": "Machine_learning.pdf",
+          "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+          "pages": [
+            140
+          ]
+        }
+      }
+    ]
+  }
+}

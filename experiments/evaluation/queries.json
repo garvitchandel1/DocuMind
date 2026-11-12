@@ -1,0 +1,17 @@
+{
+  "q1": {
+    "query": "What is supervised learning?"
+  },
+  "q2": {
+    "query": "What is gradient descent?"
+  },
+  "q3": {
+    "query": "Define XGB"
+  },
+  "q4": {
+    "query": "What is HyperParameter Tuning?"
+  },
+  "q5": {
+    "query": "What is overfitting?"
+  }
+}
